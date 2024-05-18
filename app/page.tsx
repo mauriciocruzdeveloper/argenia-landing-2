@@ -5,6 +5,7 @@ import Faq from "./components/Faq";
 import Cta from "./components/Cta";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Faq />
       {/* <Pricing /> */}
       {/* <Cta /> */}
+      <Contact />
       <Footer />
     </>
   );

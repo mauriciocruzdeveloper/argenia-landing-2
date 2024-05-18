@@ -6,6 +6,7 @@ import HeroImage1 from "../../public/assets/screenApollo.svg";
 import ReactLogo from "../../public/assets/react-2.svg";
 import StrapiLogo from "../../public/assets/strapi-full-logo-dark.svg";
 import NextLogo from "../../public/assets/nextjs-13.svg";
+import GoogleLogo from "../../public/assets/google-1-1.svg";
 import VercelLogo from "../../public/assets/vercel.svg";
 import Cnn from "../../public/assets/CNN.svg";
 import Cluth from "../../public/assets/Clutch.svg";
@@ -35,16 +36,19 @@ const Hero = () => {
           View Pricing <Image src={BlurArrow} alt="BluArrow" />
         </Link>
       </div>
-      <div className={`bg-gradient-to-b from-white to-[#546EAB] h-full relative flex justify-center min-h-[150px] sm:min-h-[175px] md:min-h-[200px] lg:min-h-[250px] w-full object-cover`}>
+      <div className={`bg-gradient-to-b from-white to-[#546EAB] h-full relative flex justify-center min-h-[350px] sm:min-h-[250px] w-full object-cover`}>
         {/* <Image src={Gradient} className="min-h-[500px] sm:min-h-[600px] md:min-h-[700px] w-full object-cover lg:min-h-[800px]" alt="Gradient" /> */}
         <div className="absolute bottom-8 left-4 right-4 lg:container">
             {/* <Image className="m-auto h-[310px] sm:h-[410px] md:h-[510px] lg:h-[600px]" src={HeroImage1} alt="heroImage" /> */}
             <div className="lg:flex flex-col lg:justify-between lg:items-center lg:pt-[64px]">
-                <p className="text-white text-[16px] lg:text-[18px] text-center pt-4 lg:pt-0 sm:pt-6 md:pt-8 mb-4">Trusted by these companies</p>
-                <div className="flex flex-wrap gap-x-8 xl:gap-[96px] justify-center items-center">
+                <p className="sm:text-white text-black text-[16px] lg:text-[18px] text-center pt-4 lg:pt-0 sm:pt-6 md:pt-8 my-4">
+                  Trusted by these companies
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-x-8 gap-y-8 xl:gap-[96px] justify-center items-center">
                     {/* <Image height={50} src={ReactLogo} alt="React" /> */}
                     <Image height={50} src={NextLogo} alt="NextJS" />
                     <Image height={50} src={StrapiLogo} alt="Strapi" />
+                    <Image height={50} src={GoogleLogo} alt="Gmail" />
                     {/* <Image height={50} src={VercelLogo} alt="Vercel" /> */}
                 </div>
             </div>
