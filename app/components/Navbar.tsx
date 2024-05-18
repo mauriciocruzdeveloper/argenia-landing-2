@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "../../public/assets/Logo.svg";
+import Logo from "../../public/assets/LOGO1.svg";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="px-5 py-4 lg:px-0 lg:container flex justify-between items-center">
       <div className="flex items-center gap-20">
-        <Image src={Logo} alt="Logo" />
+        <Image width={70} src={Logo} alt="Logo" />
         <ul className="hidden lg:flex gap-x-14">
           {navLinks.map((item, index) => (
             <li key={index}>

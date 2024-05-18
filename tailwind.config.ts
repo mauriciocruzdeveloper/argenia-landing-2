@@ -1,5 +1,12 @@
 import type { Config } from "tailwindcss";
 
+export const colors = {
+  blue: "#546EAB",
+  green: "#4697B4",
+  purple: "#864DC2",
+};
+
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",

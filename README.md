@@ -69,3 +69,13 @@ We welcome contributions! If you'd like to contribute to the Next.js Tailwind La
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+## Notas
+
+Para convertir imágenes png a svg
+
+sudo apt-get install inkscape
+
+inkscape /ruta/a/tu/archivo/LOGO1.png --export-plain-svg=/ruta/a/tu/archivo/LOGO1.svg
+
