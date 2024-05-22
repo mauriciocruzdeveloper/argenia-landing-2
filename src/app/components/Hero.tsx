@@ -1,25 +1,35 @@
 import Image from "next/image";
-import BlurArrow from "../../public/assets/blue-button.svg";
-import Gradient from "../../public/assets/Gradient.svg";
-import HeroImage from "../../public/assets/Image.svg";
-import HeroImage1 from "../../public/assets/screenApollo.svg";
-import ReactLogo from "../../public/assets/react-2.svg";
-import StrapiLogo from "../../public/assets/strapi-full-logo-dark.svg";
-import NextLogo from "../../public/assets/nextjs-13.svg";
-import GoogleLogo from "../../public/assets/google-1-1.svg";
-import VercelLogo from "../../public/assets/vercel.svg";
-import Cnn from "../../public/assets/CNN.svg";
-import Cluth from "../../public/assets/Clutch.svg";
+import BlurArrow from "../../../public/assets/blue-button.svg";
+import Gradient from "../../../public/assets/Gradient.svg";
+import HeroImage from "../../../public/assets/Image.svg";
+import HeroImage1 from "../../../public/assets/screenApollo.svg";
+import ReactLogo from "../../../public/assets/react-2.svg";
+import StrapiLogo from "../../../public/assets/strapi-full-logo-dark.svg";
+import NextLogo from "../../../public/assets/nextjs-13.svg";
+import GoogleLogo from "../../../public/assets/google-1-1.svg";
+import VercelLogo from "../../../public/assets/vercel.svg";
+import Cnn from "../../../public/assets/CNN.svg";
+import Cluth from "../../../public/assets/Clutch.svg";
 import Link from "next/link";
 import { colors } from "@/tailwind.config";
+import { useTranslations } from "next-intl";
 
-const Hero = () => {
+interface HeroProps {
+  params: {
+    lang: string
+  }
+}
+
+async function Hero() {
+  const t = useTranslations('hero');
+
   return (
     <>
       <div className="px-5 pt-4 pb-8 lg:container lg:max-w-[846px] lg:m-auto">
         <h1 className="text-info font-medium text-[32px] text-center lg:text-6xl lg:pt-11 lg:pb-6">
         Custom apps and AI-driven frameworks for complete solutions
         </h1>
+        <h1>{t('title')}</h1>
         <p className="text-primary text-center text-[16px] lg:text-[18px] mt-6">
         Empowering businesses with tailor-made applications and advanced AI frameworks, delivering comprehensive systems from initial concept to final implementation
         </p>

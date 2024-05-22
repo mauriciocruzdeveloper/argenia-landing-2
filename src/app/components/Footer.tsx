@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Fb from "../../public/assets/Facebook.svg";
-import X from "../../public/assets/X.svg";
-import Feed from "../../public/assets/Feed.svg";
+import Fb from "../../../public/assets/Facebook.svg";
+import X from "../../../public/assets/X.svg";
+import Feed from "../../../public/assets/Feed.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
