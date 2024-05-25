@@ -1,5 +1,30 @@
 {
   "hero": {
-    "title": "Hello, I'm a Web Developer"
+    "title": "Custom apps and AI-driven frameworks for complete solutions",
+    "subtitle": "Empowering businesses with tailor-made applications and advanced AI frameworks, delivering comprehensive systems from initial concept to final implementation",
+    "buttonGetStarted": "Try for free",
+    "linkPricing": "View Pricing",
+    "companies": "Trusted by these companie"
+  },
+  "faq": {
+    "faq": "Frequently Asked Questions (F.A.Q.)",
+    "title": "Do you have more questions? We are here to help!",
+    "subtitle": "If you didn't find the answer you were looking for or want to learn more about how our solutions can benefit your company, don't hesitate to contact us. At ARGENIA SAS, we are committed to providing you with the best service and support. Our team of experts is ready to assist you every step of the way.\nContact us today and discover how we can boost your business with cutting-edge artificial intelligence and software development.",
+    "question1": "What solutions does ARGENIA SAS offer?",
+    "answer1": "At ARGENIA SAS we offer three main solutions:\nCustom Software Development: We create personalized software for companies in various sectors, using AI to streamline development and reduce costs.\nMobile Application Development: We design and launch innovative mobile applications for iOS and Android, focusing on advanced features and sustainable monetization.\nAutomatic Framework Generation Platform with AI: Our platform revolutionizes software development by automating the creation of base frameworks, improving efficiency, and reducing repetitive tasks.",
+    "question2": "How does Artificial Intelligence improve software development at ARGENIA SAS?",
+    "answer2": "We use large language models (LLMs) to automate many development processes, allowing us to significantly reduce time and costs. This includes automatic generation of base frameworks and minimization of repetitive tasks, increasing agility and efficiency in developing technological solutions.",
+    "question3": "Who are our services aimed at?",
+    "answer3": "Our services are aimed at:\nCompanies in various sectors that need custom software.\nMobile device users looking for innovative and disruptive applications.\nOther software development companies that can benefit from our automatic generation platform to improve their productivity and reduce costs.",
+    "question4": "What technologies does ARGENIA SAS use for developing its solutions?",
+    "answer4": "We offer personalized software solutions for various industries.\nCreate and market innovative mobile applications with sustainable monetization models.\nProvide a proprietary platform that automates the generation of frameworks for software development, improving efficiency and reducing operating costs.",
+    "question5": "How does ARGENIA SAS ensure data protection and intellectual property?",
+    "answer5": "We comply with Law 25.326 on Personal Data Protection and take IT security measures according to the best international practices. Additionally, we register trademarks and developments with the relevant authorities and use confidentiality and rights assignment agreements with employees and contractors to protect intellectual property."
+  },
+  "contact ": {
+    "title": "Contact us",
+    "subtitle": "We are here to help you with any questions or concerns you may have. Please fill out the form below and we will get back to you as soon as possible.",
+    "whatsapp": "Contact us on WhatsApp: ",
+    "email": "Email us at: "
   }
 }

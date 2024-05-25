@@ -3,7 +3,8 @@ import Fb from "../../../public/assets/Facebook.svg";
 import X from "../../../public/assets/X.svg";
 import Feed from "../../../public/assets/Feed.svg";
 import Image from "next/image";
-const Footer = () => {
+
+export default function Footer () {
   return (
     <div className="px-4 lg:px-0 lg:container">
       <div className="flex flex-col lg:flex-row justify-between items-center py-6 gap-y-6 lg:gap-y-6">
@@ -24,5 +25,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

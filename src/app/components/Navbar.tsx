@@ -13,7 +13,7 @@ const navLinks = [
   { name: "Contact", link: "#contact" },
 ];
 
-const Navbar = () => {
+export default function Navbar () {
   const [open, setOpen] = useState(false);
 
   return (
@@ -80,5 +80,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

@@ -3,20 +3,26 @@ import WhatsAppIcon from "../../../public/assets/whatsapp-3.svg"; // Asegúrate 
 import EmailIcon from "../../../public/assets/gmail-icon.svg"; // Asegúrate de tener el ícono de Email en la carpeta adecuada
 import React from "react";
 import { RenderText } from "../utils/render-text";
+import { useTranslations } from "next-intl";
 
-const Contact = () => {
+export default function Contact () {
+  const t = useTranslations("contact");
+
+  const title = t("title");
+  const subtitle = t("subtitle");
+  const whatsapp = t("whatsapp");
+  const email = t("email");
+
   return (
     <div className="px-5 lg:px-0 lg:container pt-14 sm:pt-32" id="contact">
       <div className="flex flex-col lg:flex-row lg:gap-x-6">
         <div className="lg:w-1/3">
           <h1 className="text-medium text-info text-[24px] lg:text-[42px] mb-4">
-            Contact Us
+            {title}
           </h1>
           <p className="text-[16px] lg:text-[18px] text-[#36485C] mb-6">
             <RenderText
-              text={`If you have any questions or need further assistance, feel free to reach out to us via WhatsApp or email. Our team is ready to help you with any inquiries you might have about our services and solutions.
-
-We look forward to hearing from you!`}
+              text={subtitle}
             ></RenderText>
           </p>
         </div>
@@ -25,7 +31,7 @@ We look forward to hearing from you!`}
             <Image className="h-6 w-6" src={WhatsAppIcon} alt="WhatsApp icon" />
             <p className="ml-4 text-[16px] lg:text-[18px] text-[#36485C]">
               <RenderText
-                text={`Contact us on WhatsApp: `}
+                text={whatsapp}
               />
               <a
                 href="https://wa.me/+5493416559834" // Reemplaza con el número de WhatsApp real
@@ -41,7 +47,7 @@ We look forward to hearing from you!`}
             <Image className="h-6 w-6" src={EmailIcon} alt="Email icon" />
             <p className="ml-4 text-[16px] lg:text-[18px] text-[#36485C]">
               <RenderText
-                text={`Email us at: `}
+                text={email}
               />
               <a
                 href="mailto:argenia.sas@gmail.com" // Reemplaza con la dirección de email real
@@ -58,5 +64,3 @@ We look forward to hearing from you!`}
     </div>
   );
 };
-
-export default Contact;
