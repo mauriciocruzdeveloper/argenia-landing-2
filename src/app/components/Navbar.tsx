@@ -4,9 +4,9 @@ import Image from "next/image";
 import Logo from "../../../public/assets/LOGO1.svg";
 import User from "../../../public/assets/User.svg";
 import Menu from "../../../public/assets/Menu.svg";
-import Link from "next/link";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/src/navigation";
 
 export default function Navbar () {
   const [open, setOpen] = useState(false);
@@ -60,7 +60,10 @@ export default function Navbar () {
       )}
       {/* mobile menu */}
       <div className="flex justify-between items-center gap-x-5 lg:gap-x-14">
-        <Link className="hidden lg:block font-medium text-[16px]" href="#">
+        <Link
+          className="hidden lg:block font-medium text-[16px]"
+          href="/register"
+        >
           Open an Account
         </Link>
         <div className="hidden lg:flex justify-between items-center gap-x-3">
