@@ -30,15 +30,14 @@ export default function Hero() {
         <button
           className={`bg-[#864DC2] px-8 py-4 text-[18px] font-medium text-white rounded`}
         >
-          {buttonGetStarted}
+          <Link href="#contact">{buttonGetStarted}</Link>
         </button>
-
-        <Link
+        {/* <Link
           className="flex items-center gap-x-3 font-medium text-[#4328EB] text-[16px] "
           href="#"
         >
           {linkPricing} <Image src={BlurArrow} alt="BluArrow" />
-        </Link>
+        </Link> */}
       </div>
       <div
         className={`bg-gradient-to-b from-white to-[#546EAB] h-full relative flex justify-center min-h-[350px] sm:min-h-[250px] w-full object-cover`}
