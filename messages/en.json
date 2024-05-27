@@ -1,4 +1,11 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "features": "Features",
+    "pricing": "Precios",
+    "faq": "F.A.Q.",
+    "contact": "Contacto"
+  },
   "hero": {
     "title": "Custom apps and AI-driven frameworks for complete solutions",
     "subtitle": "Empowering businesses with tailor-made applications and advanced AI frameworks, delivering comprehensive systems from initial concept to final implementation",

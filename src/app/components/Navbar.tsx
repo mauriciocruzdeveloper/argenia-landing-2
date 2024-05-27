@@ -1,20 +1,28 @@
 "use client";
+
 import Image from "next/image";
 import Logo from "../../../public/assets/LOGO1.svg";
 import User from "../../../public/assets/User.svg";
 import Menu from "../../../public/assets/Menu.svg";
 import Link from "next/link";
 import { useState } from "react";
-
-const navLinks = [
-  { name: "Features", link: "#features" },
-  { name: "Faq", link: "#faq" },
-  { name: "Pricing", link: "#pricing" },
-  { name: "Contact", link: "#contact" },
-];
+import { useTranslations } from "next-intl";
 
 export default function Navbar () {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("navbar");
+
+  const features = t("features");
+  const faq = t("faq");
+  const pricing = t("pricing");
+  const contact = t("contact");
+
+  const navLinks = [
+    { name: features, link: "#features" },
+    { name: faq, link: "#faq" },
+    { name: pricing, link: "#pricing" },
+    { name: contact, link: "#contact" },
+  ];
 
   return (
     <nav className="px-5 py-4 lg:px-0 lg:container flex justify-between items-center">

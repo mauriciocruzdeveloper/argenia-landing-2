@@ -1,4 +1,11 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "features": "Características",
+    "pricing": "Precios",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contacto"
+  },
   "hero": {
     "title": "Aplicaciones personalizadas, desarrolladas con IA para soluciones completas",
     "subtitle": "Empoderando a las empresas con aplicaciones a medida y frameworks avanzados de IA, entregando sistemas completos desde el concepto inicial hasta la implementación final",
