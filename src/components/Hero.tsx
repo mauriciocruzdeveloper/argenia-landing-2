@@ -1,8 +1,8 @@
 import Image from "next/image";
-import BlurArrow from "../../../public/assets/blue-button.svg";
-import StrapiLogo from "../../../public/assets/strapi-full-logo-dark.svg";
-import NextLogo from "../../../public/assets/nextjs-13.svg";
-import GoogleLogo from "../../../public/assets/google-1-1.svg";
+import BlurArrow from "../../public/assets/blue-button.svg";
+import StrapiLogo from "../../public/assets/strapi-full-logo-dark.svg";
+import NextLogo from "../../public/assets/nextjs-13.svg";
+import GoogleLogo from "../../public/assets/google-1-1.svg";
 import Link from "next/link";
 import { colors } from "@/tailwind.config";
 import { useTranslations } from "next-intl";
