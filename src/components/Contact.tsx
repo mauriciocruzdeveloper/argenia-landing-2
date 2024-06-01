@@ -1,8 +1,8 @@
 import Image from "next/image";
-import WhatsAppIcon from "../../../public/assets/whatsapp-3.svg"; // Asegúrate de tener el ícono de WhatsApp en la carpeta adecuada
-import EmailIcon from "../../../public/assets/gmail-icon.svg"; // Asegúrate de tener el ícono de Email en la carpeta adecuada
+import WhatsAppIcon from "../../public/assets/whatsapp-3.svg"; // Asegúrate de tener el ícono de WhatsApp en la carpeta adecuada
+import EmailIcon from "../../public/assets/gmail-icon.svg"; // Asegúrate de tener el ícono de Email en la carpeta adecuada
 import React from "react";
-import { RenderText } from "../utils/render-text";
+import { RenderText } from "../app/utils/render-text";
 import { useTranslations } from "next-intl";
 
 export default function Contact () {

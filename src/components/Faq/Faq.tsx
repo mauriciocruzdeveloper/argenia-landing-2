@@ -1,5 +1,5 @@
 import React from "react";
-import { RenderText } from "../../utils/render-text";
+import { RenderText } from "../../app/utils/render-text";
 import { useTranslations } from "next-intl";
 import FaqAccordionItems from "./FaqAccordionItems";
 

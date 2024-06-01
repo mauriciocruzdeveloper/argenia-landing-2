@@ -2,9 +2,9 @@
 
 import * as Accordion from "@radix-ui/react-accordion";
 import Image from "next/image";
-import { RenderText } from "../../utils/render-text";
-import Minus from "../../../../public/assets/Minus.svg";
-import PlusIcon from "../../../../public/assets/Plus.svg";
+import { RenderText } from "../../app/utils/render-text";
+import Minus from "../../../public/assets/Minus.svg";
+import PlusIcon from "../../../public/assets/Plus.svg";
 import { useState } from "react";
 
 export interface FaqAccordionItemsProps {
