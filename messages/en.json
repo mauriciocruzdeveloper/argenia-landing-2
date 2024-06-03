@@ -4,7 +4,9 @@
     "features": "Features",
     "pricing": "Precios",
     "faq": "F.A.Q.",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "login": "Sign In",
+    "register": "Open an Account"
   },
   "hero": {
     "title": "Custom apps and AI-driven frameworks for complete solutions",

@@ -4,7 +4,9 @@
     "features": "Características",
     "pricing": "Precios",
     "faq": "Preguntas Frecuentes",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse"
   },
   "hero": {
     "title": "Aplicaciones personalizadas, desarrolladas con IA para soluciones completas",
