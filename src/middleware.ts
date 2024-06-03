@@ -52,13 +52,8 @@ export default function middleware(req: NextRequest) {
     "i"
   );
 
-  console.log('!!!publicPathnameRegex', publicPathnameRegex); 
-
   const isPublicPage = publicPathnameRegex.test(req.nextUrl.pathname);
   const isConstructionsRoute = constructionsPathnameRegex.test(req.nextUrl.pathname);
-
-  console.log('!!!isPublicPage', isPublicPage);
-  console.log('!!!isConstructionsRoute', isConstructionsRoute, constructionsRoutes, req.nextUrl.pathname);
 
   if (isConstructionsRoute) return Response.redirect(new URL(CONSTRUCTION_PAGE, req.nextUrl));
   if (isPublicPage) return intlMiddleware(req); // Apply internationalization for public pages

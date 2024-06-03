@@ -1,8 +1,10 @@
 import Image from "next/image";
 import BlurArrow from "../../public/assets/blue-button.svg";
-import StrapiLogo from "../../public/assets/strapi-full-logo-dark.svg";
-import NextLogo from "../../public/assets/nextjs-13.svg";
-import GoogleLogo from "../../public/assets/google-1-1.svg";
+import StrapiLogo from "../../public/assets/strapi.png";
+import NextLogo from "../../public/assets/next.png";
+import RenderLogo from "../../public/assets/render.png";
+import VercelLogo from "../../public/assets/vercel.png";
+import ReactLogo from "../../public/assets/react.png";
 import Link from "next/link";
 import { colors } from "@/tailwind.config";
 import { useTranslations } from "next-intl";
@@ -40,7 +42,7 @@ export default function Hero() {
         </Link> */}
       </div>
       <div
-        className={`bg-gradient-to-b from-white to-[#546EAB] h-full relative flex justify-center min-h-[350px] sm:min-h-[250px] w-full object-cover`}
+        className={`bg-gradient-to-b from-white to-[#546EAB] h-full relative flex justify-center min-h-[450px] sm:min-h-[150px] w-full object-cover`}
       >
         {/* <Image src={Gradient} className="min-h-[500px] sm:min-h-[600px] md:min-h-[700px] w-full object-cover lg:min-h-[800px]" alt="Gradient" /> */}
         <div className="absolute bottom-8 left-4 right-4 lg:container">
@@ -51,10 +53,11 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-x-8 gap-y-8 xl:gap-[96px] justify-center items-center">
               {/* <Image height={50} src={ReactLogo} alt="React" /> */}
-              <Image height={50} src={NextLogo} alt="NextJS" />
-              <Image height={50} src={StrapiLogo} alt="Strapi" />
-              <Image height={50} src={GoogleLogo} alt="Gmail" />
-              {/* <Image height={50} src={VercelLogo} alt="Vercel" /> */}
+              <Image height={30} src={RenderLogo} alt="Render" />
+              <Image height={30} src={StrapiLogo} alt="Strapi" />
+              <Image height={30} src={NextLogo} alt="NextJS" />
+              <Image height={30} src={ReactLogo} alt="React" />
+              <Image height={30} src={VercelLogo} alt="Vercel" />
             </div>
           </div>
         </div>
