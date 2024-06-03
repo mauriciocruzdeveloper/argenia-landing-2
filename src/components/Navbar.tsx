@@ -16,6 +16,8 @@ export default function Navbar () {
   const faq = t("faq");
   const pricing = t("pricing");
   const contact = t("contact");
+  const login = t("login");
+  const register = t("register");
 
   const navLinks = [
     { name: features, link: "#features" },
@@ -64,12 +66,12 @@ export default function Navbar () {
           className="hidden lg:block font-medium text-[16px]"
           href="/register"
         >
-          Open an Account
+          {register}
         </Link>
         <div className="hidden lg:flex justify-between items-center gap-x-3">
           <Image src={User} alt="user" />
           <Link className="font-medium text-[16px]" href="/login">
-            Sign In
+            {login}
           </Link>
         </div>
         <Image

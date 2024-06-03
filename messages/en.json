@@ -1,10 +1,12 @@
 {
   "navbar": {
-    "home": "Inicio",
+    "home": "Home",
     "features": "Features",
-    "pricing": "Precios",
+    "pricing": "Pricing",
     "faq": "F.A.Q.",
-    "contact": "Contacto"
+    "contact": "Contact",
+    "login": "Sign In",
+    "register": "Open an Account"
   },
   "hero": {
     "title": "Custom apps and AI-driven frameworks for complete solutions",
