@@ -11,6 +11,30 @@ import {
   LOGIN_PAGE,
 } from "./auth/routes";
 
+const getIsPublicRoute = (pathname: string) => {
+  const publicPathnameRegex = RegExp(
+    `^(/(${locales.join("|")}))?(${publicRoutes.flatMap((p) => (p === "/" ? ["", "/"] : p)).join("|")})/?$`,
+    "i"
+  )
+  return publicPathnameRegex.test(pathname);
+}
+
+const getIsConstructionsRoute = (pathname: string) => {
+  const constructionsPathnameRegex = RegExp(
+    `^(/(${locales.join("|")}))?(${constructionsRoutes.flatMap((p) => (p === "/" ? ["", "/"] : p)).join("|")})/?$`,
+    "i"
+  );
+  return constructionsPathnameRegex.test(pathname);
+}
+
+const getIsAuthRoute = (pathname: string) => {
+  const authPathnameRegex = RegExp(
+    `^(/(${locales.join("|")}))?(${authRoutes.flatMap((p) => (p === "/" ? ["", "/"] : p)).join("|")})/?$`,
+    "i"
+  );
+  return authPathnameRegex.test(pathname);
+}
+
 
 const intlMiddleware = createIntlMiddleware({
   locales,
@@ -20,44 +44,29 @@ const intlMiddleware = createIntlMiddleware({
 const authMiddleware = auth((req) => {
   const { nextUrl } = req;
   const isLoggedIn = !!req.auth;
-  const isPublicRoute = publicRoutes.includes(nextUrl.pathname);
-  const isAuthRoute = authRoutes.includes(nextUrl.pathname);
-  const isConstructionsRoute = constructionsRoutes.includes(nextUrl.pathname);
+  const isPublicRoute = getIsPublicRoute(nextUrl.pathname);
+  const isAuthRoute = getIsAuthRoute(nextUrl.pathname);
+  const isConstructionsRoute = getIsConstructionsRoute(nextUrl.pathname);
 
-  if (isAuthRoute) {
-    if (isLoggedIn) {
-      // Redirect logged-in users from auth routes
-      return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
-    }
-    return; // Don't modify behavior for auth routes
-  }
+  // Redirect logged-in users from auth routes to dashboard
+  // if (isAuthRoute && isLoggedIn) {
+  //     return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+  // }
 
+  // Redirect unauthorized users to login for non-public routes
   if (!isLoggedIn && !isPublicRoute) {
-    // Redirect unauthorized users to login for non-public routes
     return Response.redirect(new URL(LOGIN_PAGE, nextUrl));
   }
 
-  if (isLoggedIn) {
-    return intlMiddleware(req); // Apply internationalization for logged-in users
-  }
+  // Redirect to construction page for construction routes
+  if (isConstructionsRoute) return Response.redirect(new URL(CONSTRUCTION_PAGE, req.nextUrl));
+
+  // Apply internationalization middleware for public routes and authenticated users
+  return intlMiddleware(req);
 });
 
 export default function middleware(req: NextRequest) {
-  const publicPathnameRegex = RegExp(
-    `^(/(${locales.join("|")}))?(${publicRoutes.flatMap((p) => (p === "/" ? ["", "/"] : p)).join("|")})/?$`,
-    "i"
-  )
-  const constructionsPathnameRegex = RegExp(
-    `^(/(${locales.join("|")}))?(${constructionsRoutes.flatMap((p) => (p === "/" ? ["", "/"] : p)).join("|")})/?$`,
-    "i"
-  );
-
-  const isPublicPage = publicPathnameRegex.test(req.nextUrl.pathname);
-  const isConstructionsRoute = constructionsPathnameRegex.test(req.nextUrl.pathname);
-
-  if (isConstructionsRoute) return Response.redirect(new URL(CONSTRUCTION_PAGE, req.nextUrl));
-  if (isPublicPage) return intlMiddleware(req); // Apply internationalization for public pages
-  return (authMiddleware as any)(req); // Apply authentication logic for non-public pages
+  return (authMiddleware as any)(req);
 }
 
 export const config = {

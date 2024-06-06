@@ -6,6 +6,7 @@
     "faq": "F.A.Q.",
     "contact": "Contact",
     "login": "Sign In",
+    "logout": "Log Out",
     "register": "Open an Account"
   },
   "hero": {
@@ -43,5 +44,12 @@
     "emailLabel": "Email",
     "passwordLabel": "Password",
     "registerButton": "Register"
+  },
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Fill out the form below to sign in to your account.",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "loginButton": "Sign In"
   }
 }

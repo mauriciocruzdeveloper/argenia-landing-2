@@ -1,16 +1,25 @@
-"use client";
+"use client"
 
 import Image from "next/image";
 import Logo from "../../public/assets/LOGO1.svg";
-import User from "../../public/assets/User.svg";
+import UserImage from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/src/intl/navigation";
+import { Session } from "next-auth";
 
-export default function Navbar () {
+export interface NavbarProps {
+  session: Session | null;
+  signOut: () => void;
+}
+
+export default function Navbar ({ session, signOut }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const t = useTranslations("navbar");
+
+  console.log('!!!session', session);
+
 
   const features = t("features");
   const faq = t("faq");
@@ -68,15 +77,29 @@ export default function Navbar () {
         >
           {register}
         </Link>
+
+
         <div className="hidden lg:flex justify-between items-center gap-x-3">
-          <Image src={User} alt="user" />
-          <Link className="font-medium text-[16px]" href="/login">
-            {login}
-          </Link>
+          <Image src={UserImage} alt="user" />
+          {
+            session ? (
+              <button
+                onClick={() => signOut()}
+                className="font-medium text-[16px]"
+              >
+                {t("logout")}
+              </button>
+            ) : (
+              <Link className="font-medium text-[16px]" href="/login">
+                {login}
+              </Link>
+            )
+          }
         </div>
+        
         <Image
           className="lg:hidden"
-          src={User}
+          src={UserImage}
           width="32"
           height="32"
           alt="user"

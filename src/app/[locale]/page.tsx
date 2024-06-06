@@ -6,11 +6,16 @@ import Pricing from "../../components/Pricing";
 import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
 import Hero from "../../components/Hero";
+import { auth, signOut } from "../../auth/auth";
 
-export default function Index() {
+export default async function Index() {
+  const session = await auth();
   return (
     <>
-      <Navbar />
+      <Navbar session={session} signOut={async() => {
+        'use server';
+        await signOut()
+        }}/>
       <Hero />
       {/* <Features /> */}
       <Faq />
