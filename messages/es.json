@@ -6,6 +6,7 @@
     "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
     "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
     "register": "Registrarse"
   },
   "hero": {
@@ -43,5 +44,12 @@
     "emailLabel": "Correo Electrónico",
     "passwordLabel": "Contraseña",
     "registerButton": "Registrarse"
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "subtitle": "Ingresa tus credenciales para acceder a tu cuenta.",
+    "emailLabel": "Correo Electrónico",
+    "passwordLabel": "Contraseña",
+    "loginButton": "Iniciar Sesión"
   }
 }
