@@ -49,9 +49,9 @@ const authMiddleware = auth((req) => {
   const isConstructionsRoute = getIsConstructionsRoute(nextUrl.pathname);
 
   // Redirect logged-in users from auth routes to dashboard
-  // if (isAuthRoute && isLoggedIn) {
-  //     return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
-  // }
+  if (isAuthRoute && isLoggedIn) {
+      return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+  }
 
   // Redirect unauthorized users to login for non-public routes
   if (!isLoggedIn && !isPublicRoute) {
