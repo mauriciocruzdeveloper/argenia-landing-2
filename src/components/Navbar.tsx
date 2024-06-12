@@ -82,9 +82,10 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
 
 
         <div className="flex justify-between items-center gap-x-3">
-          <img
+          <Image
             className="rounded-full"
             width={30}
+            height={30}
             src={user?.image ?? UserImage}
             alt="user"
           />
