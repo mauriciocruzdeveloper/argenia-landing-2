@@ -49,8 +49,9 @@ const authMiddleware = auth((req) => {
   const isConstructionsRoute = getIsConstructionsRoute(nextUrl.pathname);
 
   // Redirect logged-in users from auth routes to dashboard
-  if (isAuthRoute && isLoggedIn) {
-      return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+  if (isAuthRoute) {
+    if (isLoggedIn) return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
+    return intlMiddleware(req);
   }
 
   // Redirect unauthorized users to login for non-public routes
@@ -66,9 +67,18 @@ const authMiddleware = auth((req) => {
 });
 
 export default function middleware(req: NextRequest) {
+  // TODO: Resolver el problema de entrar login o registro ya logueado y que redirija a dashboard
+  // const isPublicRoute = getIsPublicRoute(req.nextUrl.pathname);
+  // const isAuthRoute = getIsAuthRoute(req.nextUrl.pathname);
+  // const isConstructionsRoute = getIsConstructionsRoute(req.nextUrl.pathname);
+
+  // if (isConstructionsRoute) return Response.redirect(new URL(CONSTRUCTION_PAGE, req.nextUrl));
+  // if (isPublicRoute) return intlMiddleware(req);
+  // if (isAuthRoute) return intlMiddleware(req);
+
   return (authMiddleware as any)(req);
 }
 
 export const config = {
-matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: ["/((?!.+\\.[\\w]+$|_next|api/auth/callback/google).*)", "/", "/(trpc)(.*)"],
 };

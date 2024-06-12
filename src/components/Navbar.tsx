@@ -18,7 +18,9 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const t = useTranslations("navbar");
 
-  console.log('!!!session', session);
+  console.log('!!!Navbar session', session);
+
+  const user = session?.user;
 
 
   const features = t("features");
@@ -80,7 +82,7 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
 
 
         <div className="hidden lg:flex justify-between items-center gap-x-3">
-          <Image src={UserImage} alt="user" />
+          <img width={30} src={user?.image ?? UserImage} alt="user" />
           {
             session ? (
               <button
