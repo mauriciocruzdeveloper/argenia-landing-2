@@ -89,3 +89,16 @@ export async function authenticate(
       throw error;
     }
   }
+
+// TODO: Ver si la dejo o la borro
+export async function signInWithProvider(provider: string) {
+  try {
+    await signIn(provider);
+  } catch (error) {
+    if (error instanceof AuthError) {
+      // return 'google log in failed'
+      console.log('google log in failed');
+    }
+    throw error;
+  }
+}

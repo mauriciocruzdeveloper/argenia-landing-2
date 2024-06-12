@@ -12,7 +12,7 @@ export default async function Index() {
   const session = await auth();
   return (
     <>
-      <Navbar session={session} signOut={async() => {
+      <Navbar session={session} signOut={async() => { // TODO: Hacer más prolijo esta función
         'use server';
         await signOut()
         }}/>

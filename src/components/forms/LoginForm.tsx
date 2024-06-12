@@ -4,7 +4,12 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { useFormState } from "react-dom";
 import { authenticate } from "@/src/actions/actions";
-export default function LoginForm() {
+
+export interface LoginFormProps {
+  signIn: (provider: string) => Promise<void>;
+}
+
+export default function LoginForm({ signIn }: LoginFormProps) {
   const t = useTranslations("login");
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
 
@@ -80,6 +85,7 @@ export default function LoginForm() {
           </form>
         </div>
       </div>
+      <button onClick={() => signIn('google')}>Sign in with Google</button>
     </div>
   );
 }
