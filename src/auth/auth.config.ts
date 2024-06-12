@@ -6,8 +6,8 @@ import { z } from 'zod';
 import { sql } from '@vercel/postgres';
 import { User } from '../definitions/definitions';
 
-const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID ?? '';
-const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET ?? '';
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID_DEV ?? '';
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET_DEV ?? '';
 
 if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET) {
   console.error('Google Client ID or Secret is missing.');
