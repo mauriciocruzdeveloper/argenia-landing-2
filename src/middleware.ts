@@ -43,7 +43,7 @@ const intlMiddleware = createIntlMiddleware({
 
 const authMiddleware = auth((req) => {
   const { nextUrl } = req;
-  const isLoggedIn = !!req.auth;
+  const isLoggedIn = !!req.auth?.user;
   const isPublicRoute = getIsPublicRoute(nextUrl.pathname);
   const isAuthRoute = getIsAuthRoute(nextUrl.pathname);
   const isConstructionsRoute = getIsConstructionsRoute(nextUrl.pathname);

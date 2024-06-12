@@ -52,8 +52,6 @@ export const authConfig = {
        // **************************************************************
       return token;
     },
-
-    
   },
   providers: [
     google({
@@ -86,5 +84,5 @@ export const authConfig = {
   //   strategy: 'jwt',
   //   maxAge: 1 * 24 * 60 * 60, // 1 day
   // },
-  secret: process.env.AUTH_SECRET,
+  secret: process.env.NEXT_PUBLIC_SECRET,
 } satisfies NextAuthConfig;
