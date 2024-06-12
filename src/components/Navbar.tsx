@@ -81,8 +81,13 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
         </Link>
 
 
-        <div className="hidden lg:flex justify-between items-center gap-x-3">
-          <img width={30} src={user?.image ?? UserImage} alt="user" />
+        <div className="flex justify-between items-center gap-x-3">
+          <img
+            className="rounded-full"
+            width={30}
+            src={user?.image ?? UserImage}
+            alt="user"
+          />
           {
             session ? (
               <button
@@ -98,14 +103,6 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
             )
           }
         </div>
-        
-        <Image
-          className="lg:hidden"
-          src={UserImage}
-          width="32"
-          height="32"
-          alt="user"
-        />
         <Image
           onClick={()=> setOpen(!open)}
           className="lg:hidden"
