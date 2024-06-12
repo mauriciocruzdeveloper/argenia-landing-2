@@ -48,6 +48,10 @@ const authMiddleware = auth((req) => {
   const isAuthRoute = getIsAuthRoute(nextUrl.pathname);
   const isConstructionsRoute = getIsConstructionsRoute(nextUrl.pathname);
 
+  console.log('!!!islogged', isLoggedIn);
+  console.log('!!!req.auth', req.auth);
+  console.log('!!!req.auth?.user?.id', req.auth?.user?.id);
+
   // Redirect logged-in users from auth routes to dashboard
   if (isAuthRoute) {
     if (isLoggedIn) return Response.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
