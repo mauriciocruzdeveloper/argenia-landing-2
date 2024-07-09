@@ -18,10 +18,7 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const t = useTranslations("navbar");
 
-  console.log('!!!Navbar session', session);
-
   const user = session?.user;
-
 
   const features = t("features");
   const faq = t("faq");

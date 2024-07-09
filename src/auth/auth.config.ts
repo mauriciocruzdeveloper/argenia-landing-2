@@ -9,9 +9,6 @@ import { User } from '../definitions/definitions';
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID ?? '';
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET ?? '';
 
-console.log('!!!GOOGLE_CLIENT_ID', GOOGLE_CLIENT_ID);
-console.log('!!!GOOGLE_CLIENT_SECRET', GOOGLE_CLIENT_SECRET);
-
 if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET) {
   console.error('Google Client ID or Secret is missing.');
 }
@@ -32,7 +29,6 @@ export const authConfig = {
   },
   callbacks: {
     authorized({ auth }) {
-      console.log('!!! authorized callback', auth)
       const isLoggedIn = !!auth?.user;
       if (isLoggedIn) return true;
       return false; // Redirect unauthenticated users to login page
@@ -63,8 +59,6 @@ export const authConfig = {
     }),
     Credentials({
       async authorize(credentials) {
-        console.log('Authorizing credentials:',
-          JSON.stringify(credentials, null, 2));
         const parsedCredentials = z
           .object({ email: z.string().email(), password: z.string().min(6) })
           .safeParse(credentials);
@@ -78,7 +72,6 @@ export const authConfig = {
           if (passwordsMatch) return user;
         }
 
-        console.log('Invalid credentials');
         return null;
       },
     }),

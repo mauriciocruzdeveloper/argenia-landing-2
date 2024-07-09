@@ -48,13 +48,6 @@ const authMiddleware = auth((req) => {
   const isAuthRoute = getIsAuthRoute(nextUrl.pathname);
   const isConstructionsRoute = getIsConstructionsRoute(nextUrl.pathname);
 
-  console.log('\n\n\n!!!nextUrl', nextUrl.pathname)
-  console.log('!!!islogged', isLoggedIn);
-  console.log('!!!req.auth', req.auth);
-  console.log('!!!isConstructionRoute', isConstructionsRoute);
-  console.log('!!!isPublicRoute', isPublicRoute);
-  console.log('!!!req.auth?.user?.id', req.auth?.user?.id);
-
   // Redirect to construction page for construction routes
   if (isConstructionsRoute) return Response.redirect(new URL(CONSTRUCTION_PAGE, req.nextUrl));
   
