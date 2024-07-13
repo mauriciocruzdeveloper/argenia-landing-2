@@ -35,14 +35,17 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
       className="flex flex-col gap-y-4"
     >
       {items?.map((item, index) => (
-        <div key={index} className="bg-[#E3F1FF] p-4">
+        <div key={index} className="bg-argCyan p-4">
           <Accordion.Item value={`item-${index + 1}`}>
             <Accordion.Header onClick={() => handleTrigger(index + 1)}>
               <Accordion.Trigger className="flex justify-between w-full items-center font-medium text-[16px] lg:text-[18px]">
-                <p className="text-left">{item.question}</p>
+                <p className="text-left font-extrabold text-white">{item.question}</p>
                 <span className="font-medium">
                   <Image
                     className="h-6 w-6"
+                    style={{
+                      fill: "white",
+                    }}
                     src={value === `item-${index + 1}` ? Minus : PlusIcon}
                     alt="plus icon"
                   />
@@ -50,7 +53,7 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
               </Accordion.Trigger>
             </Accordion.Header>
             <Accordion.Content>
-              <p className="mt-2 text-[16px] lg:text-[18px] text-[#36485C]">
+              <p className="mt-2 text-[16px] lg:text-[18px] text-white">
                 <RenderText text={item.answer} />
               </p>
             </Accordion.Content>
