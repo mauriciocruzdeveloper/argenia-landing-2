@@ -6,17 +6,24 @@ import Pricing from "../../components/Pricing";
 import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
 import Hero from "../../components/Hero";
-import { auth, signOut } from "../../auth/auth";
+// import { auth, signOut } from "../../auth/auth";
+import { Suspense, use } from "react";
+import { signOutAction } from "@/src/actions/actions";
+import { auth } from "@/src/auth/auth";
 
-export default async function Index() {
-  const session = await auth();
+
+export default function Index() {
+  const session = use(auth());
+
   return (
     <>
-      <Navbar session={session} signOut={async() => { // TODO: Hacer más prolijo esta función
-        'use server';
-        await signOut()
-        }}/>
-      <Hero />
+      <Navbar
+        session={session}
+        signOut={signOutAction}
+      />
+      <Suspense>
+        <Hero />
+      </Suspense>
       {/* <Features /> */}
       <Faq />
       {/* <Pricing /> */}
