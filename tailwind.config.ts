@@ -42,6 +42,7 @@ const config: Config = {
         argLightGreen:"#A7D0D2",
         argTurquey:"#4697B4",
         argGrey:"#BDBFC1",
+        argDarkGrey: "#36485C",
         argBeige:"#F1E6D2",
         primary:"#36485C",
         info:"#172026",

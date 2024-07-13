@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import Logo from "../../public/assets/logoAdws1.png";
+import Logo from "../../public/assets/logoAdws2.png";
 import UserImage from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import { useState } from "react";
@@ -35,13 +35,13 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
   ];
 
   return (
-    <nav className="px-4 py-4 w-full flex justify-between items-center">
+    <nav className="fixed bg-white z-20 px-4 py-4 w-full flex justify-between items-center">
         <Image width={70} src={Logo} alt="Logo" />
         <ul className="hidden lg:flex gap-x-14">
           {navLinks.map((item, index) => (
             <li key={index}>
               <Link
-                className="text-black hover:text-argMagenta font-medium text-base"
+                className="text-argCyan hover:text-argMagenta font-medium text-base"
                 href={item.link}
               >
                 {item.name}
@@ -51,13 +51,13 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
         </ul>
       {/* mobile menu */}
       {open && (
-        <div className="lg:hidden fixed top-20 left-4 right-4 z-10 py-8 bg-white drop-shadow-md">
+        <div className="fixed lg:hidden fixed top-20 left-4 right-4 z-10 py-8 bg-white drop-shadow-md">
           <div className="flex flex-col items-center space-y-6 font-bold">
             {navLinks.map((item, index) => (
               <Link
                 onClick={()=> setOpen(!open)}
                 key={index}
-                className="font-medium text-base text-primary"
+                className="font-medium text-base text-argCyan hover:text-argMagenta"
                 href={item.link}
               >
                 {item.name}
@@ -85,7 +85,7 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
                 {t("logout")}
               </button>
             ) : (
-              <Link className="font-medium text-[16px] text-argCyan" href="/login">
+              <Link className="font-medium text-[16px] text-argCyan hover:text-argMagenta" href="/login">
                 {login}
               </Link>
             )

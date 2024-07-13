@@ -16,6 +16,7 @@ export default function Hero() {
       <div className="relative min-h-screen min-w-full flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <Image
+          className="absolute top-0"
           src="/assets/hero-1.jpg" // Replace with your actual image path
           alt="Background"
           layout="fill"
@@ -24,7 +25,7 @@ export default function Hero() {
           priority
         />
         <Image
-          className="absolute z-10 top-0 max-w-400 p-4"
+          className="absolute z-10 top-32 max-w-400 p-4"
           src="/assets/LOGOblanco.png" // Replace with your actual image path
           alt="LogoArgenia"
           width={400}
@@ -35,16 +36,52 @@ export default function Hero() {
         <div className="z-10 absolute bottom-8 left-4 right-4 lg:container">
           {/* <Image className="m-auto h-[310px] sm:h-[410px] md:h-[510px] lg:h-[600px]" src={HeroImage1} alt="heroImage" /> */}
           <div className="lg:flex flex-col lg:justify-between lg:items-center lg:pt-[64px]">
-            <p className="text-white text-[16px] lg:text-[18px] text-center pt-4 lg:pt-0 sm:pt-6 md:pt-8 my-4">
-              {companies}
-            </p>
-            <div className="flex flex-col lg:flex-row flex-wrap gap-x-8 gap-y-8 xl:gap-[96px] justify-center items-center">
-              {/* <Image height={50} src={ReactLogo} alt="React" /> */}
-              <Image height={30} src={RenderLogo} alt="Render" />
-              <Image height={30} src={StrapiLogo} alt="Strapi" />
-              <Image height={30} src={NextLogo} alt="NextJS" />
-              <Image height={30} src={ReactLogo} alt="React" />
-              <Image height={30} src={VercelLogo} alt="Vercel" />
+            <div className="flex flex-row flex-wrap gap-x-8 gap-y-8 xl:gap-[96px] justify-center items-center">
+              <div className="w-[100px] lg:w-[150px] p-2">
+                <Image
+                  height={200}
+                  width={200}
+                  layout="responsive"
+                  src={RenderLogo}
+                  alt="Render"
+                />
+              </div>
+              <div className="w-[100px] lg:w-[150px] p-2">
+                <Image
+                  height={200}
+                  width={200}
+                  layout="responsive"
+                  src={StrapiLogo}
+                  alt="Strapi"
+                />
+              </div>
+              <div className="w-[100px] lg:w-[150px] p-2">
+                <Image
+                  height={200}
+                  width={200}
+                  layout="responsive"
+                  src={NextLogo}
+                  alt="NextJS"
+                />
+              </div>
+              <div className="w-[100px] lg:w-[150px] p-2">
+                <Image
+                  height={200}
+                  width={200}
+                  layout="responsive"
+                  src={ReactLogo}
+                  alt="React"
+                />
+              </div>
+              <div className="w-[100px] lg:w-[150px] p-2">
+                <Image
+                  height={200}
+                  width={200}
+                  layout="responsive"
+                  src={VercelLogo}
+                  alt="Vercel"
+                />
+              </div>
             </div>
           </div>
         </div>
