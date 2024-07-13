@@ -1,7 +1,8 @@
 import Link from "next/link";
-import Fb from "../../public/assets/Facebook.svg";
-import X from "../../public/assets/X.svg";
-import Feed from "../../public/assets/Feed.svg";
+import Insta from "../../public/assets/insta.png";
+import X from "../../public/assets/x.png";
+import Linkedin from "../../public/assets/link.png";
+import Whatsapp from "../../public/assets/whats.png";
 import Image from "next/image";
 
 export default function Footer () {
@@ -12,13 +13,16 @@ export default function Footer () {
         <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">argenia.ar - argenia.sas@gmail.com</p>
         <div className="flex items-center gap-x-14">
           <Link href="#">
-            <Image src={X} alt="x" />
+            <Image width={30} src={X} alt="X" />
           </Link>
           <Link href="#">
-            <Image src={Fb} alt="Fb" />
+            <Image width={30} src={Insta} alt="Instagram" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/ArGenIA">
+            <Image width={30} src={Linkedin} alt="Linkedin" />
           </Link>
           <Link href="#">
-            <Image src={Feed} alt="Feed" />
+            <Image width={30} src={Whatsapp} alt="Whatsapp" />
           </Link>
         </div>
       </div>

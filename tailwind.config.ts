@@ -35,6 +35,14 @@ const config: Config = {
     },
     extend: {
       colors:{
+        white:"#FFFFFF",
+        black:"#000000",
+        argCyan:"#546EAB",
+        argMagenta:"#864DC2",
+        argLightGreen:"#A7D0D2",
+        argTurquey:"#4697B4",
+        argGrey:"#BDBFC1",
+        argBeige:"#F1E6D2",
         primary:"#36485C",
         info:"#172026",
         google: {

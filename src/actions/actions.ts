@@ -4,10 +4,8 @@ import { z } from 'zod';
 import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { auth, signIn } from '../auth/auth';
+import { signIn, signOut } from '../auth/auth';
 import { AuthError } from 'next-auth';
-// import { signIn } from '@/src/auth';
-// import { AuthError } from 'next-auth';
 
 const FormSchema = z.object({
     id: z.string(),
@@ -101,4 +99,9 @@ export async function signInWithProvider(provider: string) {
     }
     throw error;
   }
+}
+
+export async function signOutAction() {
+    await signOut();
+    redirect('/');
 }
