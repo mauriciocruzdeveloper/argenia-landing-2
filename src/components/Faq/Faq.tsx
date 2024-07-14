@@ -3,6 +3,7 @@ import { RenderText } from "../../app/utils/render-text";
 import { useTranslations } from "next-intl";
 import FaqAccordionItems from "./FaqAccordionItems";
 import Image from "next/image";
+import TitleCard from "../Card";
 
 export default function Faq() {
   const t = useTranslations("faq");
@@ -35,13 +36,14 @@ export default function Faq() {
   ]
 
   return (
-    <div className="flex flex-row px-5 lg:px-0 lg:container pt-14 sm:pt-32" id="faq">
+    <div className="flex flex-col px-5 lg:px-0 lg:container pt-14 sm:pt-32" id="faq">
+      <TitleCard
+        title={faq}
+        bgColor="argMagenta"
+      />
       <div className="flex flex-col lg:flex-row lg:gap-x-6">
         <div className="relative flex flex-col items-center lg:w-1/3">
           <div className="z-5">
-            <p className="text-argMagenta font-medium text-[24px] lg:text[42px] my-4">
-              {faq}
-            </p>
             <h1 className="text-medium text-argCyan text-[16px] lg:text-[18px] mb-4">
               {title}
             </h1>

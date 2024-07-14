@@ -5,13 +5,16 @@ import Whatsapp from "../../public/assets/whats.png";
 import Mail from "../../public/assets/email.png";
 import Image from "next/image";
 
-export default function Footer () {
+export default function Footer() {
   return (
-    <div className="px-4 lg:px-0 lg:container">
-      <div className="flex flex-col lg:flex-row justify-between items-center py-6 gap-y-6 lg:gap-y-6">
-        <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">© Copyright 2024. ARGENIA. All rights reserved.</p>
-        <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">argenia.ar - argenia.sas@gmail.com</p>
-        <div className="flex items-center gap-x-14">
+    <div className="flex flex-row px-4 lg:px-0 lg:container">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-center py-6 gap-y-12">
+        <div className="flex flex-col lg:flex-row justify-between gap-x-6">
+          <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">© Copyright 2024 - ARGENIA</p>
+          <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">All rights reserved</p>
+          <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">argenia.ar - argenia.sas@gmail.com</p>
+        </div>
+        <div className="flex items-center gap-x-2">
           <a href="https://x.com/ArgeniaSas" target="_blank">
             <Image width={30} src={X} alt="X" />
           </a>
