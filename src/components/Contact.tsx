@@ -19,7 +19,6 @@ export default function Contact() {
     <div className="px-5 lg:px-0 lg:container pt-14 lg:pt-32" id="contact">
       <TitleCard
         title={title}
-        bgColor="argMagenta"
       />
       <div className="flex flex-col lg:flex-row lg:gap-x-6">
         <div className="lg:w-1/3">

@@ -39,7 +39,6 @@ export default function Faq() {
     <div className="flex flex-col px-5 lg:px-0 lg:container pt-14 sm:pt-32" id="faq">
       <TitleCard
         title={faq}
-        bgColor="argMagenta"
       />
       <div className="flex flex-col lg:flex-row lg:gap-x-6">
         <div className="relative flex flex-col items-center lg:w-1/3">
