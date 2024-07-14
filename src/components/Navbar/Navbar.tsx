@@ -1,20 +1,22 @@
 "use client"
 
 import Image from "next/image";
-import Logo from "../../public/assets/logoAdws2.png";
-import UserImage from "../../public/assets/User.svg";
-import Menu from "../../public/assets/Menu.svg";
+import LogoAzul from "@/public/assets/LOGazul.png";
+import LogoMagenta from "@/public/assets/LOGmagenta.png";
+import UserImage from "@/public/assets/User.svg";
+import Menu from "@/public/assets/Menu.svg";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/src/intl/navigation";
 import { Session } from "next-auth";
+import { AppIcon } from "./AppIcon";
 
 export interface NavbarProps {
   session: Session | null;
   signOut: () => void;
 }
 
-export default function Navbar ({ session, signOut }: NavbarProps) {
+export default function Navbar({ session, signOut }: NavbarProps) {
   const [open, setOpen] = useState(false);
   const t = useTranslations("navbar");
 
@@ -35,27 +37,32 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
   ];
 
   return (
-    <nav className="fixed bg-white z-20 px-4 py-4 w-full flex justify-between items-center">
-        <Image width={70} src={Logo} alt="Logo" />
-        <ul className="hidden lg:flex gap-x-14">
-          {navLinks.map((item, index) => (
-            <li key={index}>
-              <Link
-                className="text-argCyan hover:text-argMagenta font-medium text-base"
-                href={item.link}
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <nav className="h-16 fixed bg-white z-20 px-4 py-4 w-full flex justify-between items-center">
+      <Link href={'#'}>
+      <AppIcon
+        image={LogoAzul}
+        imageHover={LogoMagenta}
+      />
+      </Link>
+      <ul className="hidden lg:flex gap-x-14">
+        {navLinks.map((item, index) => (
+          <li key={index}>
+            <Link
+              className="text-argCyan hover:text-argMagenta font-medium text-base"
+              href={item.link}
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
       {/* mobile menu */}
       {open && (
         <div className="fixed lg:hidden fixed top-20 left-4 right-4 z-10 py-8 bg-white drop-shadow-md">
           <div className="flex flex-col items-center space-y-6 font-bold">
             {navLinks.map((item, index) => (
               <Link
-                onClick={()=> setOpen(!open)}
+                onClick={() => setOpen(!open)}
                 key={index}
                 className="font-medium text-base text-argCyan hover:text-argMagenta"
                 href={item.link}
@@ -70,6 +77,7 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
       <div className="flex justify-between items-center gap-x-5 lg:gap-x-14">
         <div className="flex justify-between items-center gap-x-3">
           <Image
+            style={{ stroke: "green" }}
             className="rounded-full"
             width={30}
             height={30}
@@ -92,7 +100,7 @@ export default function Navbar ({ session, signOut }: NavbarProps) {
           }
         </div>
         <Image
-          onClick={()=> setOpen(!open)}
+          onClick={() => setOpen(!open)}
           className="lg:hidden"
           src={Menu}
           width="32"

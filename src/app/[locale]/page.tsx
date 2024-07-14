@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 import Features from "../../components/Features";
 import Faq from "../../components/Faq/Faq";
 import Cta from "../../components/Cta";
@@ -10,6 +9,7 @@ import Hero from "../../components/Hero";
 import { Suspense, use } from "react";
 import { signOutAction } from "@/src/actions/actions";
 import { auth } from "@/src/auth/auth";
+import Navbar from "@/src/components/Navbar/Navbar";
 
 
 export default function Index() {
