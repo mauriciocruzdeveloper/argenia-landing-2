@@ -40,7 +40,7 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
             <Accordion.Header onClick={() => handleTrigger(index + 1)}>
               <Accordion.Trigger className="flex justify-between w-full items-center font-medium text-[16px] lg:text-[18px]">
                 <p className="text-left font-extrabold text-white">{item.question}</p>
-                <span className="font-medium">
+                <span className="font-medium min-w-6">
                   <Image
                     className="h-6 w-6"
                     style={{

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImagenHombre from "@/public/assets/hombre.jpg"; // Asegúrate de tener la imagen del hombre en la carpeta adecuada
+import ImagenChica from "@/public/assets/chica-jugando-tablet.png"; // Asegúrate de tener la imagen del hombre en la carpeta adecuada
 import WhatsAppIcon from "@/public/assets/whats1.png"; // Asegúrate de tener el ícono de WhatsApp en la carpeta adecuada
 import EmailIcon from "@/public/assets/email1.png"; // Asegúrate de tener el ícono de Email en la carpeta adecuada
 import React from "react";
@@ -62,9 +62,9 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3 mt-4">
           <Image
-            src={ImagenHombre}
+            src={ImagenChica}
             alt="Hombre"
           />
         </div>
