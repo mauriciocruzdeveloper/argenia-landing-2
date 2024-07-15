@@ -52,7 +52,7 @@ export default function Faq() {
               ></RenderText>
             </p>
           </div>
-          <div className="w-[300px] lg:w-full bottom-0">
+          <div className="w-[300px] lg:w-full bottom-0 my-4">
             <Image
               className=""
               src="/assets/encantadora-joven-afroamericana-expresion-pensativa-centrada.png"

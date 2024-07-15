@@ -62,7 +62,7 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="lg:w-1/3 mt-4">
+        <div className="lg:w-1/3 my-4">
           <Image
             src={ImagenChica}
             alt="Hombre"
