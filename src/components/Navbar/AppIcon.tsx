@@ -21,6 +21,7 @@ export function AppIcon({
             className="cursor-pointer"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
+            onMouseUp={() => setHover(false)}
             width={width}
             height={height}
             src={hover ? imageHover : image}

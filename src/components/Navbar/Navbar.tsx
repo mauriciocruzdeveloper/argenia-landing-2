@@ -37,12 +37,20 @@ export default function Navbar({ session, signOut }: NavbarProps) {
   ];
 
   return (
-    <nav className="h-16 fixed bg-white z-20 px-4 py-4 w-full flex justify-between items-center">
+    <nav
+      onScroll={() => setOpen(false)}
+      className="h-16 fixed bg-white z-20 px-4 py-4 w-full flex justify-between items-center"
+    >
       <Link href={'#'}>
-      <AppIcon
-        image={LogoAzul}
-        imageHover={LogoMagenta}
-      />
+        <div
+          onClick={() => setOpen(false)}
+
+        >
+          <AppIcon
+            image={LogoAzul}
+            imageHover={LogoMagenta}
+          />
+        </div>
       </Link>
       <ul className="hidden lg:flex gap-x-14">
         {navLinks.map((item, index) => (
