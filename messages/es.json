@@ -51,5 +51,9 @@
     "emailLabel": "Correo Electrónico",
     "passwordLabel": "Contraseña",
     "loginButton": "Iniciar Sesión"
+  },
+  "apollo": {
+    "title": "Apollo",
+    "description": "Apollo es un agente de IA que automatiza la construcción de un sistema fullstack a partir de una narrativa. Con Apollo, puedes crear aplicaciones web y móviles personalizadas en minutos, sin necesidad de conocimientos técnicos. Estamos en la versión 0 y desarrollando la versión 1, que estará disponible próximamente."
   }
 }
