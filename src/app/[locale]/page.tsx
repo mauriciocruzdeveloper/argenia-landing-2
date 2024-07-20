@@ -10,6 +10,7 @@ import { Suspense, use } from "react";
 import { signOutAction } from "@/src/actions/actions";
 import { auth } from "@/src/auth/auth";
 import Navbar from "@/src/components/Navbar/Navbar";
+import Apollo from "@/src/components/Apollo/Apollo";
 
 
 export default function Index() {
@@ -21,13 +22,12 @@ export default function Index() {
         session={session}
         signOut={signOutAction}
       />
-      <Suspense>
-        <Hero />
-      </Suspense>
+      <Hero />
       {/* <Features /> */}
       <Faq />
       {/* <Pricing /> */}
       {/* <Cta /> */}
+      <Apollo />
       <Contact />
       <Footer />
     </>
