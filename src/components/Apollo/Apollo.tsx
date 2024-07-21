@@ -7,6 +7,7 @@ export default function Apollo() {
 
   const title = t("title");
   const description = t("description");
+  const subtitle = t("subtitle");
 
   return (
     <div className="px-5 lg:px-0 lg:container pt-14 lg:pt-32" id="apollo">
@@ -21,7 +22,12 @@ export default function Apollo() {
             Tu navegador no soporta la reproducción de video.
           </video>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3 mt-4">
+            <p className="text-[20px] lg:text-[14px] text-argDarkGrey mb-6">
+              <RenderText
+                text={subtitle}
+              ></RenderText>
+            </p>
           <p className="text-[16px] lg:text-[18px] text-argDarkGrey mb-6">
             {description}
           </p>
