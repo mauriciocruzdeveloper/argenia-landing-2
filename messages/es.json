@@ -53,7 +53,8 @@
     "loginButton": "Iniciar Sesión"
   },
   "apollo": {
-    "title": "Apollo: Automatización Inteligente de Sistemas Fullstack",
+    "title": "Apollo",
+    "subtitle": "Automatización Inteligente de Sistemas Fullstack",
     "description": "Apollo es nuestro innovador agente de inteligencia artificial diseñado para revolucionar la creación de sistemas frontend y backend. Introduciendo una narrativa o descripción de tu futuro sistema informático, Apollo genera automáticamente todo el frontend y backend necesario.
 
 Desarrollado en Python y utilizando avanzados modelos de lenguaje (LLMs), Apollo permite la creación rápida y eficiente de aplicaciones web y móviles personalizadas en cuestión de minutos, sin requerir conocimientos técnicos previos.
