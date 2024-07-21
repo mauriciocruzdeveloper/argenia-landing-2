@@ -30,7 +30,7 @@ export default function Apollo() {
               ></RenderText>
             </p>
           <p className="text-[16px] lg:text-[18px] text-argDarkGrey mb-6">
-            {description}
+            <RenderText text={description} />
           </p>
         </div>
       </div>
