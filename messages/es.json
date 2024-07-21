@@ -53,7 +53,13 @@
     "loginButton": "Iniciar Sesión"
   },
   "apollo": {
-    "title": "Apollo",
-    "description": "Apollo es un agente de IA que automatiza la construcción de un sistema fullstack a partir de una narrativa. Con Apollo, puedes crear aplicaciones web y móviles personalizadas en minutos, sin necesidad de conocimientos técnicos. Estamos en la versión 0 y desarrollando la versión 1, que estará disponible próximamente."
+    "title": "Apollo: Automatización Inteligente de Sistemas Fullstack",
+    "description": "Apollo es nuestro innovador agente de inteligencia artificial diseñado para revolucionar la creación de sistemas frontend y backend. Introduciendo una narrativa o descripción de tu futuro sistema informático, Apollo genera automáticamente todo el frontend y backend necesario.
+
+Desarrollado en Python y utilizando avanzados modelos de lenguaje (LLMs), Apollo permite la creación rápida y eficiente de aplicaciones web y móviles personalizadas en cuestión de minutos, sin requerir conocimientos técnicos previos.
+
+Actualmente estamos en la versión 0 y trabajando arduamente en la versión 1, que estará disponible próximamente.
+
+Descubre cómo Apollo puede transformar tus ideas en realidad con la automatización inteligente que solo ARGENIA puede ofrecer!"
   }
 }
