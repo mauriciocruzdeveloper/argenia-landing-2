@@ -22,17 +22,19 @@ export default function Navbar({ session, signOut }: NavbarProps) {
 
   const user = session?.user;
 
-  const features = t("features");
+  // const features = t("features");
   const faq = t("faq");
-  const pricing = t("pricing");
+  // const pricing = t("pricing");
   const contact = t("contact");
   const login = t("login");
-  const register = t("register");
+  // const register = t("register");
+  const apollo = "Apollo";
 
   const navLinks = [
-    { name: features, link: "#features" },
+    // { name: features, link: "#features" },
+    { name: apollo, link: "#apollo" },
     { name: faq, link: "#faq" },
-    { name: pricing, link: "#pricing" },
+    // { name: pricing, link: "#pricing" },
     { name: contact, link: "#contact" },
   ];
 
