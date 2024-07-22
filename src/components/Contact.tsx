@@ -5,7 +5,7 @@ import EmailIcon from "@/public/assets/email1.png"; // Asegúrate de tener el í
 import React from "react";
 import { RenderText } from "@/src/app/utils/render-text";
 import { useTranslations } from "next-intl";
-import TitleCard from "./Card";
+import TitleCard from "./TitleCard";
 
 export default function Contact() {
   const t = useTranslations("contact");

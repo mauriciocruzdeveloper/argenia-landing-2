@@ -3,7 +3,7 @@ import { RenderText } from "../../app/utils/render-text";
 import { useTranslations } from "next-intl";
 import FaqAccordionItems from "./FaqAccordionItems";
 import Image from "next/image";
-import TitleCard from "../Card";
+import TitleCard from "../TitleCard";
 
 export default function Faq() {
   const t = useTranslations("faq");

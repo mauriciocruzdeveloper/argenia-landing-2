@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
-import TitleCard from "@/src/components/Card";
+import TitleCard from "@/src/components/TitleCard";
 import { RenderText } from "../../app/utils/render-text";
 
 export default function Apollo() {
