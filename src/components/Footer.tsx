@@ -14,7 +14,7 @@ export default function Footer() {
           <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">All rights reserved</p>
           <p className="text-[#5F7896] text-[16px] font-medium text-center lg:text-left">argenia.ar - argenia.sas@gmail.com</p>
         </div>
-        <div className="w-full flex justify-around lg:gap-x-2">
+        <div className="lg:w-auto w-full flex justify-around lg:gap-x-2">
           <a href="https://x.com/ArgeniaSas" target="_blank">
             <Image width={30} src={X} alt="X" />
           </a>

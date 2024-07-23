@@ -1,9 +1,15 @@
 import React from "react";
 
-export function RenderText({ text }: { text: string }) {
+export interface RenderTextProps {
+  children?: React.ReactNode;
+}
+
+export function RenderText({ children }: RenderTextProps) {
+  if (typeof children !== "string") return <>{children}</>;
+
   return (
     <>
-      {text.split("\n").map((line, i) => (
+      {children.split("\n").map((line, i) => (
         <React.Fragment key={i}>
           {line}
           <br />

@@ -54,7 +54,9 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
             </Accordion.Header>
             <Accordion.Content>
               <p className="mt-2 text-[16px] lg:text-[18px] text-white">
-                <RenderText text={item.answer} />
+                <RenderText>
+                  {item.answer}
+                </RenderText>
               </p>
             </Accordion.Content>
           </Accordion.Item>

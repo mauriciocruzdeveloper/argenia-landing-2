@@ -3,7 +3,7 @@ import { RenderText } from "../../app/utils/render-text";
 import { useTranslations } from "next-intl";
 import FaqAccordionItems from "./FaqAccordionItems";
 import Image from "next/image";
-import TitleCard from "../Card";
+import TitleCard from "../TitleCard";
 
 export default function Faq() {
   const t = useTranslations("faq");
@@ -36,7 +36,7 @@ export default function Faq() {
   ]
 
   return (
-    <div className="flex flex-col px-5 lg:px-0 lg:container pt-14 sm:pt-32" id="faq">
+    <div className="flex flex-col px-5 lg:px-0 lg:container pt-4 sm:pt-8" id="faq">
       <TitleCard
         title={faq}
       />
@@ -47,9 +47,9 @@ export default function Faq() {
               {title}
             </h1>
             <p className="text-[12px] lg:text-[14px] text-argDarkGrey mb-6">
-              <RenderText
-                text={subtitle}
-              ></RenderText>
+              <RenderText>
+                {subtitle}
+              </RenderText>
             </p>
           </div>
           <div className="w-[300px] lg:w-full bottom-0 my-4">

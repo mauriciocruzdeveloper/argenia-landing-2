@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslations } from "next-intl";
-import TitleCard from "@/src/components/Card";
+import TitleCard from "@/src/components/TitleCard";
 import { RenderText } from "../../app/utils/render-text";
 
 export default function Apollo() {
@@ -11,7 +11,7 @@ export default function Apollo() {
   const subtitle = t("subtitle");
 
   return (
-    <div className="px-5 lg:px-0 lg:container pt-14 lg:pt-32" id="apollo">
+    <div className="px-5 lg:px-0 lg:container pt-4 lg:pt-8" id="apollo">
       <TitleCard title={title} />
       <div className="flex flex-col lg:flex-row lg:gap-x-6">
         <div className="lg:w-2/3">
@@ -24,13 +24,15 @@ export default function Apollo() {
           </video>
         </div>
         <div className="lg:w-1/3 mt-4">
-            <p className="text-[20px] lg:text-[14px] text-argDarkGrey mb-6">
-              <RenderText
-                text={subtitle}
-              ></RenderText>
-            </p>
+          <p className="text-[18px] lg:text-[20px] text-argDarkGrey mb-6">
+            <RenderText>
+              {subtitle}
+            </RenderText>
+          </p>
           <p className="text-[16px] lg:text-[18px] text-argDarkGrey mb-6">
-            <RenderText text={description} />
+            <RenderText>
+              {description}
+            </RenderText>
           </p>
         </div>
       </div>
