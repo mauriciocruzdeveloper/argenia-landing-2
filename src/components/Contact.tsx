@@ -5,7 +5,8 @@ import EmailIcon from "@/public/assets/email1.png"; // Asegúrate de tener el í
 import React from "react";
 import { RenderText } from "@/src/app/utils/render-text";
 import { useTranslations } from "next-intl";
-import TitleCard from "./TitleCard";
+import TitleCard from "./Layout/TitleCard";
+import Card from "@components/Layout/Card";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -16,57 +17,63 @@ export default function Contact() {
   const email = t("email");
 
   return (
-    <div className="px-5 lg:px-0 lg:container pt-4 lg:pt-8" id="contact">
-      <TitleCard
-        title={title}
-      />
-      <div className="flex flex-col lg:flex-row lg:gap-x-6">
-        <div className="lg:w-1/3">
-          <p className="text-[16px] lg:text-[18px] text-argDarkGrey mb-6">
-            <RenderText>
-              {subtitle}
-            </RenderText>
-          </p>
-        </div>
-        <div className="lg:w-1/3 flex flex-col gap-y-4">
-          <div className="bg-argCyan p-4 flex items-center">
-            <Image className="h-10 w-10" src={WhatsAppIcon} alt="WhatsApp icon" />
-            <p className="ml-4 text-[16px] lg:text-[18px] text-white">
-              <RenderText>
-                {whatsapp}
-              </RenderText>
-              <a
-                href="https://wa.me/+5493416559834" // Reemplaza con el número de WhatsApp real
-                className="text-argBeige"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                +54 9 341 6559834
-              </a>
-            </p>
+    <div className="bg-argTertiary">
+      <div className="px-5 lg:px-0 lg:container pt-4 lg:pt-8" id="contact">
+        <TitleCard
+          title={title}
+          color="text-white"
+          bgColor="bg-argPrimary"
+        />
+        <div className="flex flex-col lg:flex-row lg:gap-x-6 lg:justify-between">
+          <div>
+            <Card
+              color="text-argSecondary"
+            >
+              <p className="text-[16px] lg:text-[18px] mb-6">
+                <RenderText>
+                  {subtitle}
+                </RenderText>
+              </p>
+            </Card>
+            <div className="bg-argSecondary p-4 flex items-center my-4 rounded-2xl">
+              <Image className="h-10 w-10" src={WhatsAppIcon} alt="WhatsApp icon" />
+              <p className="ml-4 text-[16px] lg:text-[18px] text-white">
+                <RenderText>
+                  {whatsapp}
+                </RenderText>
+                <a
+                  href="https://wa.me/+5493416559834" // Reemplaza con el número de WhatsApp real
+                  className="text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +54 9 341 6559834
+                </a>
+              </p>
+            </div>
+            <div className="bg-argSecondary p-4 flex items-center my-4 rounded-2xl">
+              <Image className="h-10 w-10" src={EmailIcon} alt="Email icon" />
+              <p className="ml-4 text-[16px] lg:text-[18px] text-white">
+                <RenderText>
+                  {email}
+                </RenderText>
+                <a
+                  href="mailto:argenia.sas@gmail.com" // Reemplaza con la dirección de email real
+                  className="text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  contact@argenia.com
+                </a>
+              </p>
+            </div>
           </div>
-          <div className="bg-argCyan p-4 flex items-center">
-            <Image className="h-10 w-10" src={EmailIcon} alt="Email icon" />
-            <p className="ml-4 text-[16px] lg:text-[18px] text-white">
-              <RenderText>
-                {email}
-              </RenderText>
-              <a
-                href="mailto:argenia.sas@gmail.com" // Reemplaza con la dirección de email real
-                className="text-argBeige"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                contact@argenia.com
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className="lg:w-1/3 my-4">
-          <Image
-            src={ImagenChica}
-            alt="Hombre"
-          />
+            <Image
+              src={ImagenChica}
+              width={500}
+              height={200}
+              alt="Hombre"
+            />
         </div>
       </div>
     </div>
