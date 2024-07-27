@@ -20,7 +20,7 @@ export default function Apollo() {
           bgColor="bg-white"
         />
         <div className="flex flex-col lg:flex-row lg:gap-x-6">
-          <div className="lg:w-2/3">
+          <div className="lg:w-2/3 py-4">
             <Card
               bgColor="bg-black"
             >
@@ -33,7 +33,7 @@ export default function Apollo() {
               </video>
             </Card>
           </div>
-          <div className="lg:w-1/3">
+          <div className="lg:w-1/3 py-4">
             <Card
               bgColor="bg-argSecondary"
               color="text-argTertiary"
