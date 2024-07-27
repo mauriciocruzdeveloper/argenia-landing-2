@@ -57,7 +57,7 @@ export default function Faq() {
             </div>
             <div className="w-[300px] lg:w-full bottom-0 my-4">
               <Image
-                className="pb-4"
+                className=""
                 src="/assets/encantadora-joven-afroamericana-expresion-pensativa-centrada.png"
                 width={500}
                 height={200}
