@@ -34,9 +34,40 @@ const config: Config = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundColor: {
+        argPrimary: "#864DC2",
+        argSecondary: "#546EAB",
+        argTertiary: "#F1E6D2",
+        argCyan:"#546EAB",
+        argMagenta:"#864DC2",
+        argLightGreen:"#A7D0D2",
+        argTurquey:"#4697B4",
+        argGrey:"#BDBFC1",
+        argDarkGrey: "#36485C",
+        argBeige:"#F1E6D2",
+        primary:"#36485C",
+        info:"#172026",
+        google: {
+          'text-gray': '#3c4043',
+          'button-blue': '#1a73e8',
+          'button-blue-hover': '#5195ee',
+          'button-dark': '#202124',
+          'button-dark-hover': '#555658',
+          'button-border-light': '#dadce0',
+          'logo-blue': '#4285f4',
+          'logo-green': '#34a853',
+          'logo-yellow': '#fbbc05',
+          'logo-red': '#ea4335',
+        },
+      },
       colors:{
         white:"#FFFFFF",
         black:"#000000",
+
+        argPrimary: "#864DC2",
+        argSecondary: "#546EAB",
+        argTertiary: "#F1E6D2",
+
         argCyan:"#546EAB",
         argMagenta:"#864DC2",
         argLightGreen:"#A7D0D2",

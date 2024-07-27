@@ -58,7 +58,7 @@ export default function Navbar({ session, signOut }: NavbarProps) {
         {navLinks.map((item, index) => (
           <li key={index}>
             <Link
-              className="text-argCyan hover:text-argMagenta font-medium text-base"
+              className="text-argSecondary hover:text-argPrimary font-medium text-base"
               href={item.link}
             >
               {item.name}
@@ -74,7 +74,7 @@ export default function Navbar({ session, signOut }: NavbarProps) {
               <Link
                 onClick={() => setOpen(!open)}
                 key={index}
-                className="font-medium text-base text-argCyan hover:text-argMagenta"
+                className="font-medium text-base text-argSecondary hover:text-argPrimary"
                 href={item.link}
               >
                 {item.name}
@@ -103,7 +103,7 @@ export default function Navbar({ session, signOut }: NavbarProps) {
                 {t("logout")}
               </button>
             ) : (
-              <Link className="font-medium text-[16px] text-argCyan hover:text-argMagenta" href="/login">
+              <Link className="font-medium text-[16px] text-argSecondary hover:text-argPrimary" href="/login">
                 {login}
               </Link>
             )
