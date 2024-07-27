@@ -44,7 +44,7 @@ export default function Faq() {
           color="text-argTertiary"
         />
         <div className="flex flex-col lg:flex-row lg:gap-x-6">
-          <div className="relative flex flex-col items-center lg:w-1/3">
+          <div className="relative flex flex-col items-center lg:w-1/3 py-4">
             <div className="z-5">
               <h1 className="text-medium text-center text-argTertiary text-[16px] lg:text-[18px] font-extrabold mb-4">
                 {title}
@@ -65,7 +65,7 @@ export default function Faq() {
               />
             </div>
           </div>
-          <div className="lg:w-2/3">
+          <div className="lg:w-2/3 py-4">
             <FaqAccordionItems items={items} />
           </div>
         </div>
