@@ -36,17 +36,17 @@ export default function Faq() {
   ]
 
   return (
-    <div className="bg-argSecondary">
-      <div className="flex flex-col px-5 lg:px-0 lg:container pt-4 sm:pt-8" id="faq">
+    <div id="faq" className="bg-argPrimary1 scroll-mt-12">
+      <div className="flex flex-col px-5 lg:px-0 lg:container pt-4 sm:pt-8">
         <TitleCard
           title={faq}
-          bgColor="bg-argPrimary"
-          color="text-argTertiary"
+          textColor="argSecondary1"
+          bgColor="argPrimary2"
         />
         <div className="flex flex-col lg:flex-row lg:gap-x-6">
           <div className="relative flex flex-col items-center lg:w-1/3 py-4">
             <div className="z-5">
-              <h1 className="text-medium text-center text-argTertiary text-[16px] lg:text-[18px] font-extrabold mb-4">
+              <h1 className="text-medium text-center text-argSecondary1 text-[16px] lg:text-[18px] font-extrabold mb-4">
                 {title}
               </h1>
               {/* <p className="text-[12px] lg:text-[14px] text-white mb-6">
@@ -66,7 +66,11 @@ export default function Faq() {
             </div>
           </div>
           <div className="lg:w-2/3 py-4">
-            <FaqAccordionItems items={items} />
+            <FaqAccordionItems
+              items={items}
+              textColor="argPrimary1"
+              bgColor="argSecondary1"
+            />
           </div>
         </div>
       </div>
