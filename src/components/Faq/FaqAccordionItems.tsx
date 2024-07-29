@@ -6,9 +6,12 @@ import { RenderText } from "../../app/utils/render-text";
 import Minus from "../../../public/assets/Minus.svg";
 import PlusIcon from "../../../public/assets/Plus.svg";
 import { useState } from "react";
+import { SystemColors } from "@/src/definitions/definitions";
 
 export interface FaqAccordionItemsProps {
   items: Item[];
+  textColor?: SystemColors,
+  bgColor?: SystemColors,
 }
 
 export interface Item {
@@ -16,7 +19,11 @@ export interface Item {
   answer: string;
 }
 
-export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
+export default function FaqAccordionItems({
+  items,
+  textColor = "argPrimary1",
+  bgColor = "argSecondary1",
+}: FaqAccordionItemsProps) {
   const [value, setValue] = useState("item-1");
 
   const handleTrigger = (item: any) => {
@@ -27,6 +34,10 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
       setValue(itemVal);
     }
   };
+
+  const textColorClass = `text-${textColor}`;
+  const bgColorClass = `bg-${bgColor}`;
+
   return (
     <Accordion.Root
       collapsible
@@ -35,11 +46,11 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
       className="flex flex-col gap-y-4"
     >
       {items?.map((item, index) => (
-        <div key={index} className="bg-argTertiary p-4 rounded-2xl">
+        <div key={index} className={`${bgColorClass} p-4 rounded-2xl`}>
           <Accordion.Item value={`item-${index + 1}`}>
             <Accordion.Header onClick={() => handleTrigger(index + 1)}>
               <Accordion.Trigger className="flex justify-between w-full items-center font-medium text-[16px] lg:text-[18px]">
-                <p className="text-left font-extrabold text-argPrimary">{item.question}</p>
+                <p className={`text-left font-extrabold ${textColorClass}`}>{item.question}</p>
                 <span className="font-medium min-w-6">
                   <Image
                     className="h-6 w-6"
@@ -53,7 +64,7 @@ export default function FaqAccordionItems({ items }: FaqAccordionItemsProps) {
               </Accordion.Trigger>
             </Accordion.Header>
             <Accordion.Content>
-              <p className="mt-2 text-[16px] lg:text-[18px] text-argPrimary">
+              <p className={`mt-2 text-[16px] lg:text-[18px] ${textColorClass}`}>
                 <RenderText>
                   {item.answer}
                 </RenderText>

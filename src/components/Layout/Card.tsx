@@ -1,18 +1,22 @@
+import { SystemColors } from '@/src/definitions/definitions';
 import React from 'react';
 
 interface CardProps {
     children: React.ReactNode
-    color?: 'text-argPrimary' | 'text-argSecondary' | 'text-argTertiary' | 'text-white' | 'text-black';
-    bgColor?: 'bg-argPrimary' | 'bg-argSecondary' | 'bg-argTertiary' | 'bg-white' | 'bg-black';
+    textColor?: SystemColors;
+    bgColor?: SystemColors;
 }
 
 export default function Card ({
     children,
-    color='text-argSecondary',
-    bgColor='bg-white',
+    textColor='argPrimary2',
+    bgColor='argSecondary1',
 }: CardProps) {
+    const textColorClass = `text-${textColor}`;
+    const bgColorClass = `bg-${bgColor}`;
+
     return (
-        <div className={`${bgColor} ${color} p-4 rounded-2xl`}>
+        <div className={`${bgColorClass} ${textColorClass} p-4 rounded-2xl`}>
             {children}
         </div>
     )

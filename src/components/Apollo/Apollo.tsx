@@ -12,17 +12,17 @@ export default function Apollo() {
   const subtitle = t("subtitle");
 
   return (
-    <div className="bg-argPrimary pb-4">
-      <div className="px-5 lg:px-0 lg:container pt-4 lg:pt-8" id="apollo">
+    <div id="apollo" className="bg-argPrimary2 pb-4 scroll-mt-12">
+      <div className="px-5 lg:px-0 lg:container pt-4 lg:pt-8">
         <TitleCard
           title={title}
-          color="text-argSecondary"
-          bgColor="bg-white"
+          textColor="argPrimary1"
+          bgColor="argSecondary1"
         />
         <div className="flex flex-col lg:flex-row lg:gap-x-6">
           <div className="lg:w-2/3 py-4">
             <Card
-              bgColor="bg-black"
+              bgColor="black"
             >
               <video
                 className="w-full h-auto"
@@ -35,15 +35,15 @@ export default function Apollo() {
           </div>
           <div className="lg:w-1/3 py-4">
             <Card
-              bgColor="bg-argSecondary"
-              color="text-argTertiary"
+              bgColor="argPrimary1"
+              textColor="argSecondary1"
             >
-              <p className="text-[18px] lg:text-[20px] font-extrabold text-argTertiary mb-6">
+              <p className="text-[18px] lg:text-[20px] font-extrabold mb-6">
                 <RenderText>
                   {subtitle}
                 </RenderText>
               </p>
-              <p className="text-[16px] lg:text-[18px] text-white mb-6">
+              <p className="text-[16px] lg:text-[18px] mb-6">
                 <RenderText>
                   {description}
                 </RenderText>

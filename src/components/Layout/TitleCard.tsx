@@ -1,17 +1,22 @@
+import { SystemColors } from "@/src/definitions/definitions";
+
 export interface TitleCardProps {
     title: string;
-    color: 'text-argPrimary' | 'text-argSecondary' | 'text-argTertiary' | 'text-white' | 'text-black';
-    bgColor: 'bg-argPrimary' | 'bg-argSecondary' | 'bg-argTertiary' | 'bg-white' | 'bg-black';
+    textColor: SystemColors;
+    bgColor: SystemColors;
 }
 
-export default function TitleCard({
+export default async function TitleCard({
     title,
-    color,
+    textColor,
     bgColor,
 }: TitleCardProps) {
+    const textColorClass = `text-${textColor}`;
+    const bgColorClass = `bg-${bgColor}`;
+
     return (
         <div
-            className={`w-full rounded-xl my-4 h-10 lg:h-20 flex items-center justify-center text-md lg:text-4xl ${bgColor} ${color} text-transform: uppercase`}
+            className={`w-full rounded-xl my-4 h-10 lg:h-20 flex items-center justify-center text-[20px] lg:text-[30px] ${bgColorClass} ${textColorClass} text-transform: uppercase`}
         >
             <p>{title}</p>
         </div>
