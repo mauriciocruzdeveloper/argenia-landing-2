@@ -28,7 +28,7 @@ export default function Apollo() {
                 className="w-full h-auto"
                 controls
               >
-                <source src="/videos/apollo-demo.mp4" type="video/mp4" />
+                <source src="/videos/apollo1v2.mp4" type="video/mp4" />
                 Tu navegador no soporta la reproducción de video.
               </video>
             </Card>
