@@ -18,7 +18,6 @@ export default function Index() {
 
   return (
     <>
-      
       <Navbar
         session={session}
         signOut={signOutAction}

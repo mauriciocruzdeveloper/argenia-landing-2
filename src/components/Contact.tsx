@@ -25,7 +25,7 @@ export default function Contact() {
           bgColor="argPrimary1"
         />
         <div className="flex flex-col lg:flex-row lg:gap-x-6 lg:justify-between">
-          <div>
+          <div className="h-full">
             <Card
               textColor="argPrimary2"
             >
@@ -68,12 +68,12 @@ export default function Contact() {
               </p>
             </div>
           </div>
-            <Image
-              src={ImagenChica}
-              width={500}
-              height={200}
-              alt="Hombre"
-            />
+          <Image
+            src={ImagenChica}
+            width={500}
+            height={200}
+            alt="Hombre"
+          />
         </div>
       </div>
     </div>
