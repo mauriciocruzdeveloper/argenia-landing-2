@@ -18,7 +18,7 @@ export default async function TitleCard({
 
     return (
         <div
-            className={`flex-col w-full rounded-xl my-4 px-4 h-10 lg:h-20 flex items-center justify-center ${bgColorClass}`}
+            className={`flex-col w-full rounded-xl my-4 px-4 h-14 lg:h-20 flex items-center justify-center ${bgColorClass}`}
         >
             {title ? <p
                 className={`text-[20px] lg:text-[30px] ${textColorClass} text-transform: uppercase`}
