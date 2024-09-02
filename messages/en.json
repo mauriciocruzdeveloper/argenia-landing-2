@@ -3,42 +3,42 @@
     "home": "Home",
     "features": "Features",
     "pricing": "Pricing",
-    "faq": "F.A.Q.",
+    "faq": "FAQ",
     "contact": "Contact",
-    "login": "Sign In",
-    "logout": "Log Out",
-    "register": "Open an Account"
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register"
   },
   "hero": {
-    "title": "Custom apps and AI-driven frameworks for complete solutions",
-    "subtitle": "Empowering businesses with tailor-made applications and advanced AI frameworks, delivering comprehensive systems from initial concept to final implementation",
+    "title": "Custom Web and Mobile Apps with AI",
+    "subtitle": "Empowering businesses with custom applications and advanced AI frameworks, delivering complete systems from initial concept to final implementation",
     "buttonGetStarted": "Try for free",
-    "linkPricing": "View Pricing",
-    "companies": "Trusted by these companie"
+    "linkPricing": "See pricing",
+    "companies": "Trusted by these companies"
   },
   "faq": {
-    "faq": "Frequently Asked Questions (F.A.Q.)",
-    "title": "Do you have more questions? We are here to help!",
-    "subtitle": "If you didn't find the answer you were looking for or want to learn more about how our solutions can benefit your company, don't hesitate to contact us. At ARGENIA SAS, we are committed to providing you with the best service and support. Our team of experts is ready to assist you every step of the way.\nContact us today and discover how we can boost your business with cutting-edge artificial intelligence and software development.",
+    "faq": "Frequently Asked Questions",
+    "title": "Have questions? We're here to help!",
+    "subtitle": "If you can't find the answer you're looking for or want to learn more about how our solutions can benefit your company, don't hesitate to contact us. At ARGENIA SAS, we are committed to providing you with the best service and support. Our team of experts is ready to assist you every step of the way.\nContact us today and discover how we can boost your business with artificial intelligence and cutting-edge software development.",
     "question1": "What solutions does ARGENIA SAS offer?",
-    "answer1": "At ARGENIA SAS we offer three main solutions:\nCustom Software Development: We create personalized software for companies in various sectors, using AI to streamline development and reduce costs.\nMobile Application Development: We design and launch innovative mobile applications for iOS and Android, focusing on advanced features and sustainable monetization.\nAutomatic Framework Generation Platform with AI: Our platform revolutionizes software development by automating the creation of base frameworks, improving efficiency, and reducing repetitive tasks.",
+    "answer1": "At ARGENIA SAS, we offer three main solutions:\nCustom Software Development: We create custom software for companies in various sectors, using AI to streamline development and reduce costs.\nMobile App Development: We design and launch innovative mobile apps for iOS and Android, focusing on advanced features and sustainable monetization.\nAutomatic Framework Generation Platform with AI: Our platform revolutionizes software development by automating the creation of base frameworks, improving efficiency and reducing repetitive tasks.",
     "question2": "How does Artificial Intelligence improve software development at ARGENIA SAS?",
-    "answer2": "We use large language models (LLMs) to automate many development processes, allowing us to significantly reduce time and costs. This includes automatic generation of base frameworks and minimization of repetitive tasks, increasing agility and efficiency in developing technological solutions.",
+    "answer2": "We use large language models (LLMs) to automate many development processes, allowing us to significantly reduce time and costs. This includes the automatic generation of base frameworks and the minimization of repetitive tasks, increasing agility and efficiency in developing technological solutions.",
     "question3": "Who are our services aimed at?",
-    "answer3": "Our services are aimed at:\nCompanies in various sectors that need custom software.\nMobile device users looking for innovative and disruptive applications.\nOther software development companies that can benefit from our automatic generation platform to improve their productivity and reduce costs.",
-    "question4": "What technologies does ARGENIA SAS use for developing its solutions?",
-    "answer4": "We offer personalized software solutions for various industries.\nCreate and market innovative mobile applications with sustainable monetization models.\nProvide a proprietary platform that automates the generation of frameworks for software development, improving efficiency and reducing operating costs.",
+    "answer3": "Our services are aimed at:\nCompanies in various sectors that need custom software.\nMobile device users looking for innovative and disruptive apps.\nOther software development companies that can benefit from our automatic generation platform to improve their productivity and reduce costs.",
+    "question4": "What technologies does ARGENIA SAS use to develop its solutions?",
+    "answer4": "We offer customized software solutions for various industries.\nWe create and market innovative mobile apps with sustainable monetization models.\nWe provide our platform that automates the generation of frameworks for software development, improving efficiency and reducing operational costs.",
     "question5": "How does ARGENIA SAS ensure data protection and intellectual property?",
-    "answer5": "We comply with Law 25.326 on Personal Data Protection and take IT security measures according to the best international practices. Additionally, we register trademarks and developments with the relevant authorities and use confidentiality and rights assignment agreements with employees and contractors to protect intellectual property."
+    "answer5": "We comply with Law 25.326 on Personal Data Protection and take cybersecurity measures following international best practices. In addition, we register trademarks and developments with the relevant authorities and use confidentiality and rights assignment agreements with employees and contractors to protect intellectual property."
   },
   "contact": {
-    "title": "Contact us",
-    "subtitle": "We are here to help you with any questions or concerns you may have. Please fill out the form below and we will get back to you as soon as possible.",
+    "title": "Contact Us",
+    "subtitle": "We are here to help you with any questions or concerns you may have. Please fill out the form below, and we will get back to you as soon as possible.",
     "whatsapp": "Contact us on WhatsApp: ",
-    "email": "Email us at: "
+    "email": "Send us an email at: "
   },
   "register": {
-    "title": "Sign Up",
+    "title": "Register",
     "subtitle": "Fill out the form below to create a new account.",
     "nameLabel": "Name",
     "emailLabel": "Email",
@@ -46,15 +46,57 @@
     "registerButton": "Register"
   },
   "login": {
-    "title": "Sign In",
-    "subtitle": "Fill out the form below to sign in to your account.",
+    "title": "Login",
+    "subtitle": "Enter your credentials to access your account.",
     "emailLabel": "Email",
     "passwordLabel": "Password",
-    "loginButton": "Sign In"
+    "loginButton": "Login"
   },
-    "apollo": {
-  "title": "Apollo",
-  "subtitle": "Intelligent Fullstack System Automation",
-  "description": "Apollo is our innovative artificial intelligence agent designed to revolutionize the creation of frontend and backend systems. By introducing a narrative or description of your future computing system, Apollo automatically generates all the necessary frontend and backend.\nDeveloped in Python and using advanced language models (LLMs), Apollo enables the rapid and efficient creation of custom web and mobile applications in minutes, without requiring prior technical knowledge.\nWe are currently on version 0 and working hard on version 1, which will be available soon.\nDiscover how Apollo can transform your ideas into reality with the intelligent automation that only ARGENIA can offer!"
-}
+  "apollo": {
+    "title": "Apollo",
+    "subtitle": "Intelligent Automation of Fullstack Systems",
+    "description": "Apollo is our innovative artificial intelligence agent designed to revolutionize the creation of frontend and backend systems. By introducing a narrative or description of your future computer system, Apollo automatically generates all the necessary frontend and backend.\nDeveloped in Python and using advanced language models (LLMs), Apollo enables the quick and efficient creation of custom web and mobile applications in minutes, without requiring prior technical knowledge.\nWe are currently on version 0 and working hard on version 1, which will be available soon.\nDiscover how Apollo can transform your ideas into reality with the intelligent automation that only ARGENIA can offer!"
+  },
+  "apolloPage": {
+    "title": "Apollo",
+    "subtitle": "Intelligent Automation of Fullstack Systems",
+    "description1": {
+      "title": "Discover Apollo: Your Comprehensive Software Development Solution",
+      "part1": "At ARGENIA, we are revolutionizing the way applications are developed with our flagship product: Apollo. This innovative system allows automatic creation of frontend and backend applications from a narrative, leveraging the power of Large Scale Language Models (LLMs) and advanced programmatic methods.",
+      "part2": "Apollo takes a narrative provided by the user and, through a series of automated steps, converts that narrative into a fully functional application. The process begins with generating requirements from the entered narrative. Then, Apollo creates the necessary classes and definitions to build the backend with Strapi, one of the most flexible and scalable content management tools on the market.",
+      "part3": "On the other hand, using the generated classes, Apollo also builds the user interface (UI), forms, and pages for a frontend application based on Next.js 14, the latest version of the popular React framework for high-performance web applications. This base app not only meets the fundamental CRUD (Create, Read, Update, Delete) operations but also provides a robust and customizable platform to implement more specific use cases according to the client's needs."
+    },
+    "description2": {
+      "title": "How Does Apollo Work?",
+      "part1": "Apollo is a software development tool that uses artificial intelligence to automate the creation of web and mobile applications. Its operation is based on code generation from a narrative provided by the user, allowing complete systems to be created in minutes.",
+      "part2": "The development process with Apollo consists of the following steps:\n\nThe user enters a narrative or description of the application they want to create.\nApollo analyzes the narrative and extracts the key requirements and functionalities of the system.\nBased on the identified requirements, Apollo generates the necessary classes and definitions for the application's backend and frontend.\nThe backend is built using Strapi, a flexible and scalable content management tool.\nThe frontend is developed with Next.js 14, a React framework for high-performance web applications.\nThe end result is a fully functional application that meets the requirements specified by the user."
+    },
+    "description3": {
+      "title": "State-of-the-Art Technologies Integrated",
+      "part1": "Apollo not only facilitates development; it also incorporates a modern and powerful technology stack that ensures quality, scalability, and flexibility in every project. Some of the key components include:",
+      "part2": "Next.js 14: A React framework that offers server-side rendering, automatic page optimization, and a robust architecture for modern web applications.",
+      "part3": "Internationalization (i18n) with next-intl: Simplifies the creation of multilingual applications, allowing businesses to reach global audiences.",
+      "part4": "Secure Authentication with next-auth: Provides a flexible and secure authentication system that supports multiple providers and authentication methods.",
+      "part5": "Data Validation with Zod: Ensures that user-entered data meets the established requirements through efficient and secure validation schemas.",
+      "part6": "User Interface Design with Ant Design and Tailwind CSS: Provides a wide range of predefined components and styles to create attractive and functional user interfaces."
+    },
+    "description4": {
+      "title": "Benefits of Using Server-Side Rendering (SSR) and Server-Side Data Fetching",
+      "part1": "One of the key strategies that distinguishes Apollo is its use of Server-Side Rendering (SSR) and server-side data fetching. This strategy brings multiple benefits:",
+      "part2": "Improved Performance and SEO: By using SSR, pages are rendered on the server before being sent to the client's browser. This significantly improves page load time, providing a faster and smoother user experience. Additionally, server-side rendered pages are more search engine friendly, improving search engine optimization (SEO).",
+      "part3": "Enhanced Security: With server-side data fetching, exposure of business logic and data manipulation on the client is minimized, reducing the risk of attacks and vulnerabilities.",
+      "part4": "Real-Time Data Updates: Thanks to the ability to make API calls directly from the server, Apollo can provide real-time updated data, which is essential for applications that require fresh and accurate information.",
+      "part5": "Reduction of Dependencies on Global State: By avoiding the use of Redux and handling state mainly on the server, Apollo simplifies application state management, reducing code complexity and improving maintainability."
+    },
+    "description5": {
+      "title": "Benefits of Choosing Apollo",
+      "part1": "Reduced Development Costs and Time: By automating the application generation process, Apollo significantly reduces the time required to go from conception to implementation. This not only lowers the costs associated with traditional software development but also allows companies to bring products to market faster.",
+      "part2": "Flexibility and Scalability: Apollo provides a solid foundation that can be easily customized and extended to meet the specific needs of each client. Additionally, its integration with cutting-edge technologies ensures the system's scalability as business needs grow.",
+      "part3": "Easy Maintenance: Thanks to the use of robust frameworks and automation, the applications generated by Apollo are easy to maintain and update, ensuring long-term continuity and efficiency.",
+      "part4": "Improved User Experience: By using modern frontend technologies like Next.js and implementing server-side rendering, Apollo ensures that applications deliver a fast, smooth, and engaging experience for end users."
+    }
+  },
+  "footer": {
+    "copyright": "© ARGENIA SAS, All rights reserved."
+  }
 }

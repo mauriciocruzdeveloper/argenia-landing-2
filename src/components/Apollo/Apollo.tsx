@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import TitleCard from "@/src/components/Layout/TitleCard";
 import { RenderText } from "../../app/utils/render-text";
 import Card from '@components/Layout/Card';
+import Link from "next/link";
 
 export default function Apollo() {
   const t = useTranslations("apollo");
@@ -32,6 +33,13 @@ export default function Apollo() {
                 Tu navegador no soporta la reproducción de video.
               </video>
             </Card>
+            <Link href="/apollo">
+              <TitleCard
+                title="Ver Más"
+                textColor="argPrimary1"
+                bgColor="argSecondary1"
+              />
+            </Link>
           </div>
           <div className="lg:w-1/3 py-4">
             <Card

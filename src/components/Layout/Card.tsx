@@ -16,7 +16,7 @@ export default function Card ({
     const bgColorClass = `bg-${bgColor}`;
 
     return (
-        <div className={`${bgColorClass} ${textColorClass} p-4 rounded-2xl`}>
+        <div className={`my-4 ${bgColorClass} ${textColorClass} p-4 rounded-2xl`}>
             {children}
         </div>
     )
