@@ -138,12 +138,12 @@ export default function ApolloPage() {
                             >
                                 {/* TODO: Hacer componente con imágenes de teconologías */}
                                 <div
-                                    className="flex flex-col justify-around h-full"
+                                    className="flex flex-row lg:flex-col justify-around lg:h-full w-full"
                                 >
                                     <div className="w-[100px] lg:w-[150px] p-2">
                                         <Image
                                             height={200}
-                                            width={200}
+                                            width={100}
                                             layout="responsive"
                                             src={RenderLogo}
                                             alt="Render"
